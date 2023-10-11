@@ -1,0 +1,19 @@
+.h-text-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+.h-text-center {
+  text-align: center;
+}
+
+.h-text-left {
+  text-align: left;
+}
+
+.h-text-right {
+  text-align: right;
+}
