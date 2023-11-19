@@ -1,0 +1,93 @@
+button, a{
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+
+.landing-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background: #1d3557;
+}
+
+.landing-col{
+    width: 60%;
+    padding-top: 25vh;
+    padding-left: 15vh;
+    padding-right: 15vh;
+}
+
+.landing-col2{
+    width: 40%;
+}
+
+img{
+    height: 100vh;
+    width: auto;
+}
+
+.landing-content{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 128px;
+    color: #ffffff;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+.landing-input{
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    width: 350px;
+    height: 80px;
+    padding: 0 24px;
+    margin-bottom: 150px;
+    border-radius: 30px;
+    font-size: 21px;
+}
+
+.landing-btn{
+    background: #E63946;
+    border-radius: 30px;
+    padding: 24px 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 275px;
+    text-decoration: none;
+    color: #000;
+    z-index: 10;
+}
+
+
+label{
+    text-decoration: none;  
+    font-weight: 600;  
+    font-size: 21px;
+    margin-right: 5px;
+    z-index: 0;
+}
+
+/* PAGINA MAPPA */

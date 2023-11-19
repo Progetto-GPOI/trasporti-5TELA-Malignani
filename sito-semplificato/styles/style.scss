@@ -1,0 +1,15 @@
+.landing-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background: #1d3557;
+}
+
+.landing-col{
+    border: 1px solid red;
+    &:first-child{
+        
+    }
+}
+
+
