@@ -31,6 +31,8 @@ body{
 
 .landing-col2{
     width: 40%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 img{
@@ -50,6 +52,10 @@ h1{
     font-weight: bold;
 }
 
+.logo{
+    display: none;
+}
+
 .landing-input{
     vertical-align: baseline;
     font-weight: inherit;
@@ -60,7 +66,7 @@ h1{
     outline: 0;
     padding: 0;
     margin: 0;
-    width: 350px;
+    max-width: 350px;
     height: 80px;
     padding: 0 24px;
     margin-bottom: 150px;
@@ -81,7 +87,6 @@ h1{
     z-index: 10;
 }
 
-
 label{
     text-decoration: none;  
     font-weight: 600;  
@@ -90,4 +95,96 @@ label{
     z-index: 0;
 }
 
+.search-btn{
+    display: none;
+}
+
+@media(max-width: 1440px){
+    h1{
+        font-size: 96px;
+    }
+    .landing-input{
+        height: 60px;
+        max-width: 225px;
+        font-size: 18px;
+        margin-bottom: 75px;
+    }
+
+    .landing-btn{
+        padding: 18px 26px;
+        max-width: 200px;
+    }
+
+    label{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 480px){
+    .landing-container{
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+    .landing-col{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .landing-col2{
+        height: 100vh;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+        opacity: 20%;
+    }
+
+    .landing-content{
+        align-items: center;
+        margin-top: 130px;
+    }
+
+    h1{
+        margin-bottom: 75px;
+    }
+
+    .logo{
+        display: block;
+        fill: #ffffff;
+        margin-bottom: 100px;
+    }
+
+    .landing-input{
+        text-align: center;
+        height: 80px;
+        margin-bottom: 75px;
+    }
+
+    .landing-btn{
+        display: none;
+    }
+
+    .search-btn{
+        display: block;
+        height: 75px;
+        width: 75px;
+        background: #E63946;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+    }
+
+    .search-btn{
+        fill: #1d3557;
+    }
+
+
+}
 /* PAGINA MAPPA */
