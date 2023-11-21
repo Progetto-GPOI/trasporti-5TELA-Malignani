@@ -12,6 +12,7 @@ button, a{
 
 body{
     font-family: 'Inter', sans-serif;
+    background: #1d3557;
 }
 
 
@@ -99,6 +100,54 @@ label{
     display: none;
 }
 
+/* PAGINA MAPPA */
+
+.map-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.map-col{
+    border: 1px solid red;
+    width: 75%;
+    height: 100%;
+
+}
+
+.map-col2{
+    border: 1px solid red;
+    width: 25%;
+    height: 100%;
+}
+
+.map-row{
+    border: 1px solid red;
+    height: 60%;
+    width: 100%;
+}
+
+.map-row2{
+    border: 1px solid red;
+    height: 40%;
+    width: 100%;
+    background: #A8DADC;
+}
+
+h2{
+    padding: 24px 21px;
+    font-weight: bold;
+    color: #1d3557;
+    font-size: 36px;
+}
+
+.ele-circ{
+    margin: 0 24px 32px 24px;
+    background: #F1FAEE;
+    border-radius: 20px;
+}
+
 @media(max-width: 1440px){
     h1{
         font-size: 96px;
@@ -120,7 +169,7 @@ label{
     }
 }
 
-@media(max-width: 480px){
+@media(max-width: 768px){
     .landing-container{
         flex-direction: column;
         align-items: center;
@@ -143,11 +192,13 @@ label{
         align-items: center;
         z-index: 5;
         opacity: 20%;
+        overflow: hidden;
+        width: 100%;
     }
 
     .landing-content{
         align-items: center;
-        margin-top: 130px;
+        padding-top: 15%;
     }
 
     h1{
@@ -187,4 +238,4 @@ label{
 
 
 }
-/* PAGINA MAPPA */
+
