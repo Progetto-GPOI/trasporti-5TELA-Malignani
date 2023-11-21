@@ -13,14 +13,6 @@
     font-size: 18px;
   }
 
-  input[type="text"],
-  input[type="date"],
-  input[type="tel"],
-  input[type="email"],
-  textarea {
-    font-size: 16px;
-  }
-
   .submitter {
     font-size: 18px;
     display: inline-block;
@@ -34,68 +26,15 @@
   .submitter:hover {
       background-color: #45a049;
     }
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      background-color: #d3d3d3;
-    }
-    li {
-      display: inline-block;
-    }
-    li a {
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 10px 50px;
-      text-decoration: none;
-    }
-    li a:hover {
-      background-color: #778899;
-    }
-
-    #formContainer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px;
-    }
-
-    .form-half {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 45%; 
-    }
-
-    .form-half label,
-    .form-half input,
-    .form-half textarea {
-      margin-bottom: 10px; 
-    }
-
   </style>
 </head>
 <body>
   <ul>
   </ul>
 
-  <div id="formContainer">
-    <div class="form-half">
       <form id="form_1" action="inserimento_pensiline.php" method="POST">
-      <div class="form-half">
-
         <label for="via">Via:</label>
         <input type="text" id="via" name="via" required>
-        <br>
-        <br>
-  </div>
     <input type="submit" value="Invia" class="submitter" id="inviaButton">
   </form>
   
