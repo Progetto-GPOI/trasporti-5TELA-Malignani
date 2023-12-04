@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserimento nuova linea</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Inserimento nuova linea</h2>
+    <form id="inputForm">
+        <label for="nome">Nome Linea:</label>
+        <input type="text" id="nome" required>
+        <br>
+        <label for="Tratta">Numero tratte:</label>
+        <input type="number" id="tratta" required>
+        <br>
+        <label for="pensilina">numero pensiline:</label>
+        <input type="number" id="pensiline" required>
+        <br>
+        <button type="button" onclick="generaTabella()">Invio</button>
+    </form>
+
+    <div id="tabellaContainer"></div>
+
+    <script>
+        
+        function generaTabella() {
+            var nome = document.getElementById("nome").value;
+            var tratta = parseInt(document.getElementById("tratta").value);
+            var pensiline = parseInt(document.getElementById("pensiline").value);
+
+            var table = document.createElement("table");
+            var tabellaContainer = document.getElementById("tabellaContainer");
+
+            var headerRow = table.insertRow();
+            headerRow.insertCell().appendChild(document.createTextNode(""));
+
+            for (var j = 1; j <= pensiline; j++) {
+                var th = document.createElement("th");
+                th.appendChild(document.createTextNode("P" + j));
+                headerRow.appendChild(th);
+            }
+
+            for (var i = 1; i <= tratta; i++) {
+                var row = table.insertRow();
+
+                var pCell = row.insertCell();
+                pCell.appendChild(document.createTextNode("T" + i));
+
+                for (var j = 1; j <= pensiline; j++) {
+                    var cell = row.insertCell();
+
+                    var input = document.createElement("input");
+                    input.type = "time";
+                    input.id = "orario_" + i + "_" + j;
+                    cell.appendChild(input);
+                }
+            }
+
+            tabellaContainer.innerHTML = "";
+            tabellaContainer.appendChild(table);
+        }
+    </script>
+</body>
+</html>
