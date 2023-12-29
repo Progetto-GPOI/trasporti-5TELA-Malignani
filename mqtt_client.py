@@ -90,8 +90,8 @@ class MqttClient:
         self.root.mainloop()
 
 if __name__ == "__main__":
-    broker_address = "192.168.1.67"
-    topic = "/home/temp"
+    broker_address = "ip_broker"
+    topic = "topic_broker"
 
     mqtt_client = MqttClient(broker_address, topic)
     mqtt_client.run()
