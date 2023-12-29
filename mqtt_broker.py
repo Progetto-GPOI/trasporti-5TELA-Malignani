@@ -2,7 +2,7 @@ import paho.mqtt.client as mqtt
 import time
 
 def invia_messaggio(broker, messaggio):
-    broker.publish("/home/temp", messaggio)
+    broker.publish("topic_broker", messaggio)
 
 def on_connect(broker, userdata, flags, rc):
     print(f"Connesso con risultato {rc}")
