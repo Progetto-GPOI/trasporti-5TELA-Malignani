@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-mappa.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css"
@@ -44,8 +44,29 @@
           >
         </div>
         <div class="map-row2">
-          <h2>BUS IN CIRCOLAZIONE</h2>
-          <div class="ele-circ"></div>
+          <div class="head-circ">
+            <h2>BUS IN CIRCOLAZIONE</h2>
+            <div class="report">
+            <label for="" class="report-text">
+              SEGNALIAMO MALFUNZIONAMENTO IN ZONA (NOME ZONA)
+            </label>
+            <div class="report-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="21"
+                viewBox="0 -960 960 960"
+                width="21"
+              >
+                <path
+                  d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240ZM330-120 120-330v-300l210-210h300l210 210v300L630-120H330Zm34-80h232l164-164v-232L596-760H364L200-596v232l164 164Zm116-280Z"
+                />
+              </svg>
+            </div>
+          </div>
+          </div>
+          <div class="ele-circ">
+            
+          </div>
         </div>
       </div>
       <div class="map-col2">
@@ -69,7 +90,7 @@
                 <option value="Arrivo">ARRIVO</option>
               </select>
             </div>
-            <input class="input-ora" type="text" placeholder="00:00" />
+            <input class="input-ora" type="time" />
           </div>
           <div class="form-col2">
             <a
@@ -118,9 +139,235 @@
                   </div>
                   <div class="item-row">
                     <label for="" class="label-item">Via di arrivo</label>
-                    <div class="ora-pa" style="fill: #E63946">
+                    <div class="ora-pa" style="fill: #e63946">
                       <label for="" class="label-pa">00:00</label>
                       <svg
+                        class="svg-down"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 -960 960 960"
+                        width="24"
+                      >
+                        <path
+                          d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="divisore-ricerca"></span>
+            </li>
+
+            <li class="item-ricerca">
+              <div class="content-ricerca">
+                <div class="item-col">
+                  <h4>17</h4>
+                </div>
+                <div class="item-col2">
+                  <div class="item-row">
+                    <label for="" class="label-item">Via di partenza</label>
+                    <div class="ora-pa" style="fill: #457b9d">
+                      <label for="" class="label-pa">00:00</label>
+                      <svg
+                        class="svg-up"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 -960 960 960"
+                        width="24"
+                      >
+                        <path
+                          d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="item-row">
+                    <label for="" class="label-item">Via di arrivo</label>
+                    <div class="ora-pa" style="fill: #e63946">
+                      <label for="" class="label-pa">00:00</label>
+                      <svg
+                        class="svg-down"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 -960 960 960"
+                        width="24"
+                      >
+                        <path
+                          d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="divisore-ricerca"></span>
+            </li>
+
+            <li class="item-ricerca">
+              <div class="content-ricerca">
+                <div class="item-col">
+                  <h4>17</h4>
+                </div>
+                <div class="item-col2">
+                  <div class="item-row">
+                    <label for="" class="label-item">Via di partenza</label>
+                    <div class="ora-pa" style="fill: #457b9d">
+                      <label for="" class="label-pa">00:00</label>
+                      <svg
+                        class="svg-up"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 -960 960 960"
+                        width="24"
+                      >
+                        <path
+                          d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="item-row">
+                    <label for="" class="label-item">Via di arrivo</label>
+                    <div class="ora-pa" style="fill: #e63946">
+                      <label for="" class="label-pa">00:00</label>
+                      <svg
+                        class="svg-down"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 -960 960 960"
+                        width="24"
+                      >
+                        <path
+                          d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="divisore-ricerca"></span>
+            </li>
+
+            <li class="item-ricerca">
+              <div class="content-ricerca">
+                <div class="item-col">
+                  <h4>17</h4>
+                </div>
+                <div class="item-col2">
+                  <div class="item-row">
+                    <label for="" class="label-item">Via di partenza</label>
+                    <div class="ora-pa" style="fill: #457b9d">
+                      <label for="" class="label-pa">00:00</label>
+                      <svg
+                        class="svg-up"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 -960 960 960"
+                        width="24"
+                      >
+                        <path
+                          d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="item-row">
+                    <label for="" class="label-item">Via di arrivo</label>
+                    <div class="ora-pa" style="fill: #e63946">
+                      <label for="" class="label-pa">00:00</label>
+                      <svg
+                        class="svg-down"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 -960 960 960"
+                        width="24"
+                      >
+                        <path
+                          d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="divisore-ricerca"></span>
+            </li>
+
+            <li class="item-ricerca">
+              <div class="content-ricerca">
+                <div class="item-col">
+                  <h4>17</h4>
+                </div>
+                <div class="item-col2">
+                  <div class="item-row">
+                    <label for="" class="label-item">Via di partenza</label>
+                    <div class="ora-pa" style="fill: #457b9d">
+                      <label for="" class="label-pa">00:00</label>
+                      <svg
+                        class="svg-up"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 -960 960 960"
+                        width="24"
+                      >
+                        <path
+                          d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="item-row">
+                    <label for="" class="label-item">Via di arrivo</label>
+                    <div class="ora-pa" style="fill: #e63946">
+                      <label for="" class="label-pa">00:00</label>
+                      <svg
+                        class="svg-down"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 -960 960 960"
+                        width="24"
+                      >
+                        <path
+                          d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="divisore-ricerca"></span>
+            </li>
+
+            <li class="item-ricerca">
+              <div class="content-ricerca">
+                <div class="item-col">
+                  <h4>17</h4>
+                </div>
+                <div class="item-col2">
+                  <div class="item-row">
+                    <label for="" class="label-item">Via di partenza</label>
+                    <div class="ora-pa" style="fill: #457b9d">
+                      <label for="" class="label-pa">00:00</label>
+                      <svg
+                        class="svg-up"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24"
+                        viewBox="0 -960 960 960"
+                        width="24"
+                      >
+                        <path
+                          d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="item-row">
+                    <label for="" class="label-item">Via di arrivo</label>
+                    <div class="ora-pa" style="fill: #e63946">
+                      <label for="" class="label-pa">00:00</label>
+                      <svg
+                        class="svg-down"
                         xmlns="http://www.w3.org/2000/svg"
                         height="24"
                         viewBox="0 -960 960 960"
