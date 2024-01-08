@@ -1,3 +1,6 @@
+/* PAGINA MAPPA */
+
+
 button, a{
     vertical-align: baseline;
     font-weight: inherit;
@@ -15,94 +18,6 @@ body{
     background: #1d3557;
 }
 
-
-.landing{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    background: #1d3557;
-    &-col{
-        width: 60%;
-        padding-top: 25vh;
-        padding-left: 15vh;
-        padding-right: 15vh;
-        &--content{
-            display: flex;
-            flex-direction: column;
-            h1{
-                font-size: 128px;
-                color: #ffffff;
-                margin-bottom: 60px;
-                font-weight: bold;
-            }
-        }
-    }
-    &-col2{
-        width: 40%;
-        display: flex;
-        justify-content: flex-end;
-        img{
-            height: 100vh;
-            width: auto;
-        }
-    }
-}
-
-.logo{
-    display: none;
-}
-
-.landing-input{
-    vertical-align: baseline;
-    font-weight: inherit;
-    font-family: inherit;
-    font-style: inherit;
-    font-size: 100%;
-    border: 0 none;
-    outline: 0;
-    padding: 0;
-    margin: 0;
-    max-width: 350px;
-    height: 80px;
-    padding: 0 24px;
-    margin-bottom: 150px;
-    border-radius: 30px;
-    font-size: 21px;
-}
-
-.landing-btn{
-    background: #E63946;
-    border-radius: 30px;
-    padding: 24px 34px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 275px;
-    text-decoration: none;
-    color: #000;
-    z-index: 10;
-    label{
-        text-decoration: none;  
-        font-weight: 600;  
-        font-size: 21px;
-        margin-right: 5px;
-        z-index: 0;
-    }
-}
-
-.search-btn{
-    display: none;
-    height: 50px;
-    width: 50px;
-    background: #E63946;
-    border-radius: 100%;
-    justify-content: center;
-    align-items: center;
-    fill: #1d3557;
-}
-
-/* PAGINA MAPPA */
-
 .map-container{
     height: 100vh;
     width: 100%;
@@ -113,7 +28,7 @@ body{
 .map-col{
     border: 1px solid red;
     width: 75%;
-    height: 100vh;
+    height: 100%;
 }
 
 
@@ -126,21 +41,65 @@ body{
 .map-row2{
     border: 1px solid red;
     height: 40%;
-    width: 100%;
     background: #A8DADC;
+    padding: 2.514% 21px;
+}
+
+.head-circ{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    height: 20%;
+    align-items: flex-start;
 }
 
 h2{
-    padding: 24px 21px;
     font-weight: bold;
     color: #1d3557;
     font-size: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.report{
+    background: #E2E992;
+    border: 20px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 32px;
+    padding: 4px;
+    padding-left: 16px;
+    align-items: center;
+    height: 32px;
+    border: 1px solid black;
+}
+
+.report-text{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.report-icon{
+    height: 24px;
+    width: 24px;
+    border-radius: 100%;
+    background: #D8E639;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
 }
 
 .ele-circ{
-    margin: 0 24px 32px 24px;
+
     background: #F1FAEE;
     border-radius: 20px;
+    width: 100%;
+    height: 70%;
 }
 
 /* Colonna dx */
@@ -148,6 +107,7 @@ h2{
 .map-col2{
     border: 1px solid red;
     width: 25%;
+    height: 100%;
     padding: 2%;
     display: flex;
     flex-direction: column;
@@ -238,16 +198,38 @@ select{
     text-align: center;
 }
 
+.search-btn{
+    display: none;
+    height: 50px;
+    width: 50px;
+    background: #E63946;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    fill: #1d3557;
+}
+
 .ele-ricerca{
     height: 100%;
     margin-top: 24px;
     border-radius: 20px;
     background: #A8DADC;
+    overflow-y: auto;
+}
+
+/* impostazioni scroll-bar*/
+::-webkit-scrollbar {
+    display: none;
 }
 
 .item-ricerca{
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.item-ricerca:last-child{
+    margin-bottom: 0;
 }
 
 .content-ricerca{
@@ -258,6 +240,11 @@ select{
 .ul-ricerca{
     padding: 30px 40px;
     padding-bottom: 30px;
+}
+
+.item-col{
+    height: auto;
+    width: auto;
 }
 
 .item-col2{
@@ -275,7 +262,18 @@ select{
 .ora-pa{
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: start;
+    margin-left: 5px;
+}
+
+.svg-up{
+    color: #457b9d;
+}
+
+.svg-down{
+    color: #E63946;
+    height: 24px;
+    width: 24px;
 }
 
 h4{
@@ -287,8 +285,8 @@ h4{
 
 .label-item{
     font-size: 18px;
-    height: 28px;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .label-pa{
@@ -300,90 +298,45 @@ h4{
 .divisore-ricerca{
     height: 1px;
     width: 100%;
-    margin-top: 20px;
+    margin: 20px 0;
     background: #1D3557;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0;
 }
 
 @media(max-width: 1440px){
-    h1{
-        font-size: 96px;
-    }
-    .landing-input{
-        height: 60px;
-        max-width: 225px;
-        font-size: 18px;
-        margin-bottom: 75px;
+    h2{
+        font-size: 24px;
     }
 
-    .landing-btn{
-        padding: 18px 26px;
-        max-width: 200px;
+    h3{
+        font-size: 21px ;
     }
 
-    label{
-        font-size: 16px;
+    h4{
+        font-size: 15px;
+    }
+
+    .label-item{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .label-pa{
+        font-size: 15px;
+    }
+
+    .svg-up{
+        height: 15px;
+        width: 15px;
+    }
+
+    .svg-down{
+        height: 15px;
+        width: 15px;
+    }
+
+    .divisore-ricerca{
+        margin-top: 5px;
     }
 }
-
-@media(max-width: 1024px){
-    .landing-container{
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        z-index: 1;
-    }
-    .landing-col{
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        z-index: 10;
-    }
-
-    .landing-col2{
-        height: 100vh;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 5;
-        opacity: 20%;
-        overflow: hidden;
-        width: 100%;
-    }
-
-    .landing-content{
-        align-items: center;
-        padding-top: 15%;
-    }
-
-    h1{
-        margin-bottom: 75px;
-    }
-
-    .logo{
-        display: block;
-        fill: #ffffff;
-        margin-bottom: 100px;
-    }
-
-    .landing-input{
-        text-align: center;
-        height: 80px;
-        margin-bottom: 75px;
-    }
-
-    .landing-btn{
-        display: none;
-    }
-
-    .search-btn{
-        display: flex;
-        height: 75px;
-        width: 75px;
-    }
-
-
-}
-
