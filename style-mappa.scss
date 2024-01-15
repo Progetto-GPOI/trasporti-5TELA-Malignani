@@ -36,16 +36,16 @@ body{
     display: flex;
     flex-direction: row;
     &-col{
-        border: 1px solid red;
+        //border: 1px solid red;
         width: 75%;
         height: 100%;
         &--row{
-            border: 1px solid red;
+            //border: 1px solid red;
             height: 60%;
             width: 100%;
         }
         &--row2{
-            border: 1px solid red;
+            //border: 1px solid red;
             height: 40%;
             background: $color_blue3;
             padding: 2.514% 21px;
@@ -53,8 +53,8 @@ body{
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
-                margin-bottom: 20px;
-                height: 20%;
+                margin-bottom: 2.5%;
+                height: 17.5%;
                 align-items: flex-start;
                 h2{
                     font-weight: bold;
@@ -73,7 +73,6 @@ body{
                     padding: 4px;
                     padding-left: 16px;
                     align-items: center;
-                    height: 32px;
                     border: 1px solid black;
                     &-text{
                         display: flex;
@@ -95,18 +94,49 @@ body{
                 }
             }
             .ele-circ{
-                
                 background: $color_blue4;
                 border-radius: 20px;
-                width: 100%;
+                padding: 26px;
+                overflow-y: auto;
                 height: 70%;
+                table{
+                    width: 100%;
+                    max-height: 100%;
+                    border-collapse: separate;
+                    border-spacing: 0 10px;
+                    tr{
+                        th{
+                            text-align: center;
+                            font-size: 18px;
+                            &:first-child{
+                                font-weight: bold;
+                                text-align: left;
+                            }
+                            &:nth-child(2){
+                                text-align: left;
+                            }
+                        }
+                        td{
+                            text-align: center;
+                            font-size: 16px;
+                            &:first-child{
+                                font-weight: bold;
+                                color: $color_red;
+                                text-align: left;
+                            }
+                            &:nth-child(2){
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
     /* Colonna dx */
 
     &-col2{
-        border: 1px solid red;
+        //border: 1px solid red;
         width: 25%;
         height: 100%;
         padding: 2%;
@@ -276,6 +306,21 @@ body{
                     h2{
                         font-size: 24px;
                     }
+                    .report{
+                        &-text{
+                            margin-right: 10px;
+                            font-size: 10px;
+                            font-weight: 700;
+                        }
+                        &-icon{
+                            height: 16px;
+                            width: 16px;
+                            border-radius: 100%;
+                        }
+                    }
+                }
+                .ele-circ{
+                    height: 50%;
                 }
             }
         }

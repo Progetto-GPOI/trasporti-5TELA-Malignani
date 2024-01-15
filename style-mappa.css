@@ -29,17 +29,14 @@ body {
   /* Colonna dx */
 }
 .map-col {
-  border: 1px solid red;
   width: 75%;
   height: 100%;
 }
 .map-col--row {
-  border: 1px solid red;
   height: 60%;
   width: 100%;
 }
 .map-col--row2 {
-  border: 1px solid red;
   height: 40%;
   background: #a8dadc;
   padding: 2.514% 21px;
@@ -48,8 +45,8 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
-  height: 20%;
+  margin-bottom: 2.5%;
+  height: 17.5%;
   align-items: flex-start;
 }
 .map-col--row2 .head-circ h2 {
@@ -68,7 +65,6 @@ body {
   padding: 4px;
   padding-left: 16px;
   align-items: center;
-  height: 32px;
   border: 1px solid black;
 }
 .map-col--row2 .head-circ .report-text {
@@ -91,11 +87,40 @@ body {
 .map-col--row2 .ele-circ {
   background: #f1faee;
   border-radius: 20px;
-  width: 100%;
+  padding: 26px;
+  overflow-y: auto;
   height: 70%;
 }
+.map-col--row2 .ele-circ table {
+  width: 100%;
+  max-height: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+.map-col--row2 .ele-circ table tr th {
+  text-align: center;
+  font-size: 18px;
+}
+.map-col--row2 .ele-circ table tr th:first-child {
+  font-weight: bold;
+  text-align: left;
+}
+.map-col--row2 .ele-circ table tr th:nth-child(2) {
+  text-align: left;
+}
+.map-col--row2 .ele-circ table tr td {
+  text-align: center;
+  font-size: 16px;
+}
+.map-col--row2 .ele-circ table tr td:first-child {
+  font-weight: bold;
+  color: #e63946;
+  text-align: left;
+}
+.map-col--row2 .ele-circ table tr td:nth-child(2) {
+  text-align: left;
+}
 .map-col2 {
-  border: 1px solid red;
   width: 25%;
   height: 100%;
   padding: 2%;
@@ -253,6 +278,19 @@ body {
 @media (max-width: 1440px) {
   .map-col--row2 .head-circ h2 {
     font-size: 24px;
+  }
+  .map-col--row2 .head-circ .report-text {
+    margin-right: 10px;
+    font-size: 10px;
+    font-weight: 700;
+  }
+  .map-col--row2 .head-circ .report-icon {
+    height: 16px;
+    width: 16px;
+    border-radius: 100%;
+  }
+  .map-col--row2 .ele-circ {
+    height: 50%;
   }
   .map-col2 h3 {
     font-size: 21px;
