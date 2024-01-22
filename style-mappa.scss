@@ -31,6 +31,10 @@ body{
     background: $color_blue;
 }
 
+header{
+    display: none;
+}
+
 .map{
     height: 100vh;
     width: 100%;
@@ -132,20 +136,23 @@ body{
                                 font-weight: bold;
                                 color: $color_red;
                                 text-align: left;
-                                width: 10%;
+                                max-width: 10%;
                             }
                             &:nth-child(2){
                                 text-align: left;
-                                width: 26%;
+                                max-width: 26%;
                             }
                             &:nth-child(3){
-                                width: 36%;
+                                max-width: 36%;
                             }
                         }
                     }
                 }
             }
         }
+    }
+    .banner{
+        display: none;
     }
     /* Colonna dx */
 
@@ -310,7 +317,9 @@ body{
 }
 
 @media(max-width: 1440px){
-    
+    header{
+        display: none;
+    }   
     .map{
         &-col{
             &--row{
@@ -387,4 +396,82 @@ body{
         }
     }  
 
+}
+
+@media(max-width: 1024px){
+    body{
+        background: $color_blue3;
+    }
+
+    header{
+        height: 60px;
+        padding: 0 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: $color_blue;
+        h2{
+            font-size: 32px;
+            font-weight: bold;
+            color: $color_red;
+        }
+        .hamburger{
+            width: 30px;
+            height: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            span{
+                width: 100%;
+                height: 4px;
+                background: $color_red;
+            }
+        }
+    }
+
+    .map{
+        height: auto;
+        flex-direction: column;
+        &-col{
+            width: 100%;
+            height: auto;
+            &--row{
+                width: 100%;
+                height: 400px;
+            }
+            &--row2{
+                height: 500px;
+                padding: 35px 21px;
+                .head-circ{
+                    height: auto;
+                    margin-bottom: 24px;
+                    .report{
+                        display: none;
+                    }
+                }
+                .ele-circ{
+                    height: 80%;
+                    table{
+                        tr{
+                            td{
+                                label{                          //DA FIXARE
+                                    /*white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;*/ 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .banner{
+                display: flex;
+                height: 350px;
+                background: red;
+            }
+        }
+        &-col2{
+            display: none;
+        }
+    }
 }
