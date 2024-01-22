@@ -6,6 +6,7 @@ $color_blue: #1d3557;
 $color_blue2: #457b9d;
 $color_blue3: #a8dadc;
 $color_blue4: #f1faee;
+$color_blue5: #def4d7;
 $color_red: #e63946;
 
 /* impostazioni scroll-bar*/
@@ -105,15 +106,23 @@ body{
                     border-collapse: separate;
                     border-spacing: 0 10px;
                     tr{
+                        //&:nth-child(odd){
+                        //    background: $color_blue5;
+                        //}
                         th{
                             text-align: center;
                             font-size: 18px;
                             &:first-child{
                                 font-weight: bold;
                                 text-align: left;
+                                width: 10%;
                             }
                             &:nth-child(2){
                                 text-align: left;
+                                width: 26%;
+                            }
+                            &:nth-child(3){
+                                width: 36%;
                             }
                         }
                         td{
@@ -123,9 +132,14 @@ body{
                                 font-weight: bold;
                                 color: $color_red;
                                 text-align: left;
+                                width: 10%;
                             }
                             &:nth-child(2){
                                 text-align: left;
+                                width: 26%;
+                            }
+                            &:nth-child(3){
+                                width: 36%;
                             }
                         }
                     }

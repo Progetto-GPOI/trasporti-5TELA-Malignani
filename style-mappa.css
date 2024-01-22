@@ -104,9 +104,14 @@ body {
 .map-col--row2 .ele-circ table tr th:first-child {
   font-weight: bold;
   text-align: left;
+  width: 10%;
 }
 .map-col--row2 .ele-circ table tr th:nth-child(2) {
   text-align: left;
+  width: 26%;
+}
+.map-col--row2 .ele-circ table tr th:nth-child(3) {
+  width: 36%;
 }
 .map-col--row2 .ele-circ table tr td {
   text-align: center;
@@ -116,9 +121,14 @@ body {
   font-weight: bold;
   color: #e63946;
   text-align: left;
+  width: 10%;
 }
 .map-col--row2 .ele-circ table tr td:nth-child(2) {
   text-align: left;
+  width: 26%;
+}
+.map-col--row2 .ele-circ table tr td:nth-child(3) {
+  width: 36%;
 }
 .map-col2 {
   width: 25%;
