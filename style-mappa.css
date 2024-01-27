@@ -354,6 +354,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background: #1d3557;
+    border-bottom: 4px solid #e63946;
   }
   header h2 {
     font-size: 32px;
@@ -405,8 +406,59 @@ header {
   }
   .map-col .banner {
     display: flex;
-    height: 350px;
-    background: red;
+    height: auto;
+    background: #a8dadc;
+    padding: 0 21px;
+    padding-bottom: 21px;
+    flex-direction: column;
+  }
+  .map-col .banner a {
+    height: 220px;
+    border-radius: 30px;
+    background: #1d3557;
+    position: relative;
+    padding: 40px;
+    z-index: 5;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .map-col .banner a img {
+    opacity: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: 6;
+    border-radius: 30px;
+  }
+  .map-col .banner a h3 {
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 10;
+    color: #e63946;
+    text-decoration-line: none;
+    opacity: 1;
+  }
+  .map-col .banner a .button-invio {
+    position: relative;
+    z-index: 10;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background: #e63946;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+  }
+  .map-col .banner a .button-invio svg {
+    fill: #1d3557;
   }
   .map-col2 {
     display: none;
