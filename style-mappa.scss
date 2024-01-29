@@ -351,6 +351,15 @@ header{
             h3{
                 font-size: 21px ;
             }
+            form{
+                .form-ora{
+                    &--col{
+                        label{
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
             .results{
                 ul{
                     li{

@@ -315,6 +315,9 @@ header {
   .map-col2 h3 {
     font-size: 21px;
   }
+  .map-col2 form .form-ora--col label {
+    margin-bottom: 5px;
+  }
   .map-col2 .results ul li .content-col h4 {
     font-size: 15px;
   }

@@ -92,6 +92,7 @@ header .hamburger span {
   display: flex;
   align-items: center;
   margin-right: 5px;
+  margin-bottom: 5px;
 }
 .map-col2 form .form-ora--col select {
   border: none;
