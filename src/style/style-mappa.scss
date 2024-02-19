@@ -32,7 +32,44 @@ body{
 }
 
 header{
-    display: none;
+    height: 40px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    background: $color_blue;
+    border-bottom: 4px solid $color_red;
+    h2{
+        font-size: 28px;
+        font-weight: bold;
+        color: $color_blue2;
+        margin-right: 50px;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        li{
+            margin-right: 30px;
+            a{
+                color: $color_red;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .hamburger{
+        display: none;
+        width: 30px;
+        height: 24px;
+        flex-direction: column;
+        justify-content: space-between;
+        span{
+            width: 100%;
+            height: 3px;
+            background: $color_red;
+        }
+    }
 }
 
 .map{
@@ -329,6 +366,20 @@ header{
 }
 
 @media(min-width: 1920px){
+    header{
+        height: 80px;
+        h2{
+            font-size: 36px;
+        }
+
+        ul{
+            li{
+                a{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
     .map{
         &-col{
             &--row2{
@@ -360,9 +411,6 @@ header{
 }
 
 @media(max-width: 1440px){
-    header{
-        display: none;
-    }   
     .map{
         &-col{
             &--row{
@@ -456,29 +504,12 @@ header{
     }
 
     header{
-        height: 60px;
-        padding: 0 24px;
-        display: flex;
         justify-content: space-between;
-        align-items: center;
-        background: $color_blue;
-        border-bottom: 4px solid $color_red;
-        h2{
-            font-size: 32px;
-            font-weight: bold;
-            color: $color_red;
+        ul{
+            display: none;
         }
         .hamburger{
-            width: 30px;
-            height: 24px;
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            span{
-                width: 100%;
-                height: 4px;
-                background: $color_red;
-            }
         }
     }
 
