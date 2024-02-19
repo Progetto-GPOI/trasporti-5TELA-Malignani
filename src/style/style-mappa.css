@@ -93,7 +93,19 @@ header {
   border-radius: 20px;
   padding: 26px;
   overflow-y: auto;
-  height: 70%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+}
+.map-col--row2 .ele-circ .div-table {
+  height: 100%;
+  width: 1px;
+  background: #000000;
+  margin: 0 4%;
+  display: none;
+}
+.map-col--row2 .ele-circ .table-sx {
+  display: none;
 }
 .map-col--row2 .ele-circ table {
   width: 100%;
@@ -292,6 +304,26 @@ header {
   margin-bottom: 0;
 }
 
+@media (min-width: 1920px) {
+  .map-col--row2 .head-circ h2 {
+    font-size: 54px;
+  }
+  .map-col--row2 .head-circ .report {
+    padding: 12px;
+  }
+  .map-col--row2 .head-circ .report-text {
+    font-size: 16px;
+  }
+  .map-col--row2 .ele-circ .div-table {
+    display: block;
+  }
+  .map-col--row2 .ele-circ table {
+    width: 46%;
+  }
+  .map-col--row2 .ele-circ .table-sx {
+    display: table;
+  }
+}
 @media (max-width: 1440px) {
   header {
     display: none;
