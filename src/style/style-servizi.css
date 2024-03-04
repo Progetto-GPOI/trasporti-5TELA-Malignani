@@ -115,6 +115,7 @@ header .hamburger span {
   margin-top: 50px;
   padding: 0 10%;
   display: flex;
+  justify-content: space-between;
 }
 .cartina-text {
   width: 55%;
@@ -130,6 +131,7 @@ header .hamburger span {
 .cartina img {
   height: auto;
   width: 45%;
+  max-width: 500px;
 }
 
 .contatti {
@@ -235,4 +237,16 @@ footer .col3 li a {
 footer .col4 p {
   font-size: 12px;
   color: #ffffff;
+}
+
+@media (min-width: 1920px) {
+  header {
+    height: 80px;
+  }
+  header h2 {
+    font-size: 36px;
+  }
+  header ul li a {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=style-servizi.css.map */
