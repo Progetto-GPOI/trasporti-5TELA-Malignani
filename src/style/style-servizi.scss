@@ -8,13 +8,14 @@ $color_blue3: #a8dadc;
 $color_blue4: #f1faee;
 $color_blue5: #def4d7;
 $color_red: #e63946;
+$color_gray: #d9d9d9;
 
 /* impostazioni scroll-bar*/
 ::-webkit-scrollbar {
     display: none;
 }
 
-button, a, input{
+button, a, input, textarea{
     vertical-align: baseline;
     font-weight: inherit;
     font-family: inherit;
@@ -92,12 +93,108 @@ header{
     }
     p{
         margin-top: 10px;
-        font-size: 18px;
+        font-size: 16px;
+    }
+}
+
+.cartina{
+    margin-top: 50px;
+    padding: 0 10%;
+    display: flex;
+    &-text{
+        width: 55%;
+        h3{
+            font-weight: bold;
+            font-size: 21px;
+        }
+        p{
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    }
+    img{
+        height: auto;
+        width: 45%;
+    }
+}
+
+.contatti{
+    margin-top: 50px;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    h3{
+        font-size: 21px;
+        font-weight: bold;
+    }
+    &-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 47%;
+            input{
+                background: $color_gray;
+                font-size: 14px;
+                height: 30px;
+                margin-top: 2px;
+                padding-left: 7px;
+            }
+            textarea{
+                background: $color_gray;
+                margin-top: 2px;
+                resize: none;
+                padding: 7px;
+                font-size: 14px;
+            }
+            .termini{
+                width: 100%;
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                &-chk{
+                    display: flex;
+                    flex-direction: row;
+                    input[type="checkbox"]{
+                        height: 35px;
+                        width: 35px;
+                        border-radius: 0;
+                        border: none;
+                    }
+                    label{
+                        font-size: 14px;
+                        margin-left: 10px;
+                    }
+                }
+                a{
+                    display: flex;
+                    height: 35px;
+                    width: 100px;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    background: $color_blue;
+                    border-radius: 30px;
+                    text-decoration: none;
+                    color: $color_red;
+                }
+            }
+        }
+        &--text{
+            width: 47%;
+            p{
+                font-size: 16px;
+            }
+        }
     }
 }
 
 footer{
-    margin-top: 50px;
+    margin-top: 75px;
     height: 250px;
     background: $color_blue;
     display: flex;

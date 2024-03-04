@@ -4,7 +4,7 @@
   display: none;
 }
 
-button, a, input {
+button, a, input, textarea {
   vertical-align: baseline;
   font-weight: inherit;
   font-family: inherit;
@@ -81,11 +81,107 @@ header .hamburger span {
 }
 .content p {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+.cartina {
+  margin-top: 50px;
+  padding: 0 10%;
+  display: flex;
+}
+.cartina-text {
+  width: 55%;
+}
+.cartina-text h3 {
+  font-weight: bold;
+  font-size: 21px;
+}
+.cartina-text p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+.cartina img {
+  height: auto;
+  width: 45%;
+}
+
+.contatti {
+  margin-top: 50px;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+}
+.contatti h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+.contatti-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.contatti-row form {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+}
+.contatti-row form input {
+  background: #d9d9d9;
+  font-size: 14px;
+  height: 30px;
+  margin-top: 2px;
+  padding-left: 7px;
+}
+.contatti-row form textarea {
+  background: #d9d9d9;
+  margin-top: 2px;
+  resize: none;
+  padding: 7px;
+  font-size: 14px;
+}
+.contatti-row form .termini {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contatti-row form .termini-chk {
+  display: flex;
+  flex-direction: row;
+}
+.contatti-row form .termini-chk input[type=checkbox] {
+  height: 35px;
+  width: 35px;
+  border-radius: 0;
+  border: none;
+}
+.contatti-row form .termini-chk label {
+  font-size: 14px;
+  margin-left: 10px;
+}
+.contatti-row form .termini a {
+  display: flex;
+  height: 35px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #1d3557;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #e63946;
+}
+.contatti-row--text {
+  width: 47%;
+}
+.contatti-row--text p {
+  font-size: 16px;
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 75px;
   height: 250px;
   background: #1d3557;
   display: flex;
