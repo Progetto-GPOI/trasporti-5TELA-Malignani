@@ -104,6 +104,12 @@ header .hamburger span {
   margin-top: 10px;
   font-size: 16px;
 }
+.content ul li {
+  margin-left: 20px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  list-style: circle;
+}
 
 .cartina {
   margin-top: 50px;

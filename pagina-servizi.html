@@ -44,57 +44,83 @@
         </div>
       </header>
       <div class="hero">
-        <img src="src/images/img-landing.jpg" alt="">
+        <img src="src/images/img-landing.jpg" alt="" />
         <h1>Servizi</h1>
       </div>
       <div class="content">
-        <h3>Lorem Ipsum</h3>
+        <h3>Pensiline</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          elementum lorem fringilla, condimentum nisi quis, fringilla lectus.
-          Vivamus eu porta dolor, sit amet sagittis turpis. In porta dolor quis
-          sagittis faucibus. In a odio ut nulla maximus rutrum. Phasellus vel
-          pretium tortor. Etiam vestibulum porta tincidunt. Quisque porta nunc
-          justo, finibus condimentum massa tincidunt a. Sed viverra ex eget enim
-          tristique tempus. Pellentesque ac tempor magna. Cras fringilla aliquet
-          risus, eu consectetur ante. Nam mattis sed elit nec fermentum.
-          Suspendisse nec blandit sem, ut sollicitudin elit. Ut cursus mi sed
-          iaculis auctor. Phasellus sit amet massa neque. Suspendisse et
-          sollicitudin mauris. Aenean venenatis, augue sit amet venenatis
-          placerat, nunc risus semper risus, a posuere orci tortor ut metus.
-          Aliquam erat volutpat. Sed vitae consequat metus, ut egestas turpis.
-          In facilisis consequat odio cursus imperdiet. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus. Morbi eu fermentum turpis, ut
-          viverra eros. Morbi finibus nibh sit amet urna pharetra pretium.
-          Mauris semper sapien venenatis porta vestibulum. Suspendisse suscipit
-          ac sem vitae iaculis. Suspendisse rhoncus, lorem vel pharetra laoreet,
-          nibh metus venenatis nulla, vitae consectetur urna nisi non lectus.
+          Ad ogni fermata è presente un display gestito da una scheda Raspberry
+          Pi. Una volta ricevuti i dati corrispondenti ad una linea (NLinea,
+          Nposti, tempo di arrivo) dal server, questi vengo visualizzati sul
+          display presente nella fermata su una riga divisa in colonne diverse
+          (una per ciascun dato), sul display vengono visualizzati solamente le
+          prime 10 linee passanti nei successivi 30 minuti. Negli orari più
+          affollati sarà presente uno scorrimento fra le "pagine" in modo da
+          rendere le informazioni facilmente leggibili.
         </p>
       </div>
       <div class="content">
-        <h3>Lorem Ipsum</h3>
+        <h3>Base Station</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          elementum lorem fringilla, condimentum nisi quis, fringilla lectus.
-          Vivamus eu porta dolor, sit amet sagittis turpis. In porta dolor quis
-          sagittis faucibus. In a odio ut nulla maximus rutrum. Phasellus vel
-          pretium tortor. Etiam vestibulum porta tincidunt. Quisque porta nunc
-          justo, finibus condimentum massa tincidunt a. Sed viverra ex eget enim
-          tristique tempus. Pellentesque ac tempor magna. Cras fringilla aliquet
-          risus, eu consectetur ante. Nam mattis sed elit nec fermentum.
-          Suspendisse nec blandit sem, ut sollicitudin elit. Ut cursus mi sed
-          iaculis auctor. Phasellus sit amet massa neque. Suspendisse et
-          sollicitudin mauris. Aenean venenatis, augue sit amet venenatis
-          placerat, nunc risus semper risus, a posuere orci tortor ut metus.
-          Aliquam erat volutpat. Sed vitae consequat metus, ut egestas turpis.
-          In facilisis consequat odio cursus imperdiet. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus. Morbi eu fermentum turpis, ut
-          viverra eros. Morbi finibus nibh sit amet urna pharetra pretium.
-          Mauris semper sapien venenatis porta vestibulum. Suspendisse suscipit
-          ac sem vitae iaculis. Suspendisse rhoncus, lorem vel pharetra laoreet,
-          nibh metus venenatis nulla, vitae consectetur urna nisi non lectus.
+          Dati i segnali provenienti dagli autobus urbani della flotta della
+          società dei trasporti, le base stations, collocate in diverse
+          posizioni della città, raccoglieranno le informazioni contenute in
+          essi, li trasformeranno e li invieranno al server che si preoccuperà a
+          sua volta di inviarli alle pensiline e di gestire un database che
+          permetterà l'aggiornamento dei dati nell'app/sito web. Le base
+          stations verranno collocate in corrispondenza di impianti di
+          illuminazione cittadina in modo da favorirne l'alimentazione e la
+          comunicazione verso al server nonché quella verso gli autobus visto
+          che essi passeranno vicino ai pali della luce. All'interno di esse si
+          troverà una scheda Raspberry che verrà utilizzata come ricevitore, il
+          pc verrà usato come convertitore dei dati provenienti dagli autobus. I
+          segnali elaborati verranno inviati tramite collegamento in fibra
+          ottica al server.
         </p>
       </div>
+
+      <div class="content">
+        <h3>Autobus</h3>
+        <p>
+          Data una flotta di BUS da monitorare per poter conoscere in tempo
+          reale la posizione e il numero di passeggeri a bordo è necessario
+          prevedere un sistema costituito da questi 4 elementi: elaborazione dei
+          dati ricevuti dai vari sistemi e poi trasmessi alle base stations,
+          unità di comunicazione con la Base Station, contapersone, sistema di
+          rilevazione della posizione.
+        </p>
+      </div>
+
+      <div class="content">
+        <h3>Server</h3>
+        <p>
+          Il server dev'essere in grado di ricevere tramite rete cablata i
+          pacchetti trasmessi dalle base station ad una frequenza minima di una
+          volta al minuto e tradurli tramite l'utilizzo di un protocollo. Il
+          server deve inoltre trattare i dati ricevuti inserenoli in un database
+          nelle rispettive tabelle per poi calcolare gli orari di arrivo dei bus
+          basandosi sulle informazioni ricevute. I calcoli effettuati devono
+          essere spediti secondo un protocollo a ogni pensilina con una
+          frequenza minima di una volta al minuto. Oltre agli orari di arrivo de
+          bus il server deve anche fare da tramite per sapere quanti posti sono
+          disponibili tra base station e pensiline. Nel database del server
+          devono essere contenute tutte le informazioni relative agli orari
+          previsti per ogni tratta, suddivisibile in linea e tempistica per
+          pensilina. Il database, inoltre, deve contenere tabelle apposite per
+          la memorizzazione delle informazioni ricevute che devono resettarsi
+          periodicamente. Il server deve anche contenere un sito web online 24/7
+          accessibile da remoto tramite qualsiasi dispositivo. Sul sito web
+          dev'essere possibile visualizzare, in tempo reale, i bus su una mappa
+          e applicare filtri di visualizzazione per visualizzare solo le linee
+          desiderate. Il sito deve anche permettere, tramite una ricerca, la
+          selezione di una fermata e deve concedere la possibilità di vedere i
+          bus in arrivo e il tempo mancante per il raggiungimento alla fermata
+          scelta, oltre a visualizzare tutte le linee che passano per quella
+          fermata.
+        </p>
+      </div>
+
       <footer>
         <div class="col1">
           <svg
