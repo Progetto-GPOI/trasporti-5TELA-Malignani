@@ -115,6 +115,7 @@ header .hamburger span {
   margin-top: 50px;
   padding: 0 10%;
   display: flex;
+  justify-content: space-between;
 }
 .cartina-text {
   width: 55%;
@@ -130,6 +131,7 @@ header .hamburger span {
 .cartina img {
   height: auto;
   width: 45%;
+  max-width: 500px;
 }
 
 .contatti {

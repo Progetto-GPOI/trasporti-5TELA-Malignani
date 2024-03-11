@@ -129,6 +129,7 @@ header{
     margin-top: 50px;
     padding: 0 10%;
     display: flex;
+    justify-content: space-between;
     &-text{
         width: 55%;
         h3{
@@ -143,6 +144,7 @@ header{
     img{
         height: auto;
         width: 45%;
+        max-width: 500px;
     }
 }
 
