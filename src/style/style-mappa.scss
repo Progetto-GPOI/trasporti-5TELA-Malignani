@@ -350,6 +350,46 @@ header{
                             }
                         }
                     }
+
+                    .biglietto{
+                        display: none;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        margin-top: 10px;
+                        &-prezzo {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            label{
+                                &:first-child{
+                                    text-transform: uppercase;
+                                    font-size: 11px;
+                                    font-weight: bold;
+                                }
+                                &:last-child{
+                                    font-size: 15px;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                        &-cta{
+                            width: auto;
+                            height: 36px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-decoration: none;
+                            background: $color_blue2;
+                            padding: 0 14px;
+                            border-radius: 30px;
+                            label{
+                                font-size: 12px;
+                                font-weight: bold;
+                                color: #def4d7;
+                            }
+                        }
+                    }
+
                     .divisore{
                         height: 1px;
                         width: 100%;
@@ -364,6 +404,8 @@ header{
         }
     }
 }
+
+.show{display: flex;}
 
 @media(min-width: 1920px){
     header{

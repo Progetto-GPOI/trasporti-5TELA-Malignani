@@ -330,6 +330,42 @@ header .hamburger span {
   height: 24px;
   width: 24px;
 }
+.map-col2 .results ul li .biglietto {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.map-col2 .results ul li .biglietto-prezzo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.map-col2 .results ul li .biglietto-prezzo label:first-child {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+}
+.map-col2 .results ul li .biglietto-prezzo label:last-child {
+  font-size: 15px;
+  font-weight: bold;
+}
+.map-col2 .results ul li .biglietto-cta {
+  width: auto;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: #457b9d;
+  padding: 0 14px;
+  border-radius: 30px;
+}
+.map-col2 .results ul li .biglietto-cta label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #def4d7;
+}
 .map-col2 .results ul li .divisore {
   height: 1px;
   width: 100%;
@@ -337,6 +373,10 @@ header .hamburger span {
   background: #1d3557;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 0;
+}
+
+.show {
+  display: flex;
 }
 
 @media (min-width: 1920px) {

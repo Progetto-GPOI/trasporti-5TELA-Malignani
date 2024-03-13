@@ -265,6 +265,7 @@ footer .col4 p {
   }
   .cartina {
     flex-direction: column;
+    align-items: center;
   }
   .cartina-text {
     width: 100%;
