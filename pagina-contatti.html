@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pagina-servizi</title>
+    <title>pagina-contatti</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
@@ -55,82 +55,95 @@
       </header>
       <div class="hero">
         <img src="src/images/img-landing.jpg" alt="" />
-        <h1>Servizi</h1>
+        <h1>Contatti</h1>
       </div>
+
       <div class="content">
-        <h3>Pensiline</h3>
+        <h3>Chi siamo?</h3>
         <p>
-          Ad ogni fermata è presente un display gestito da una scheda Raspberry
-          Pi. Una volta ricevuti i dati corrispondenti ad una linea (NLinea,
-          Nposti, tempo di arrivo) dal server, questi vengo visualizzati sul
-          display presente nella fermata su una riga divisa in colonne diverse
-          (una per ciascun dato), sul display vengono visualizzati solamente le
-          prime 10 linee passanti nei successivi 30 minuti. Negli orari più
-          affollati sarà presente uno scorrimento fra le "pagine" in modo da
-          rendere le informazioni facilmente leggibili.
-        </p>
-      </div>
-      <div class="content">
-        <h3>Base Station</h3>
-        <p>
-          Dati i segnali provenienti dagli autobus urbani della flotta della
-          società dei trasporti, le base stations, collocate in diverse
-          posizioni della città, raccoglieranno le informazioni contenute in
-          essi, li trasformeranno e li invieranno al server che si preoccuperà a
-          sua volta di inviarli alle pensiline e di gestire un database che
-          permetterà l'aggiornamento dei dati nell'app/sito web. Le base
-          stations verranno collocate in corrispondenza di impianti di
-          illuminazione cittadina in modo da favorirne l'alimentazione e la
-          comunicazione verso al server nonché quella verso gli autobus visto
-          che essi passeranno vicino ai pali della luce. All'interno di esse si
-          troverà una scheda Raspberry che verrà utilizzata come ricevitore, il
-          pc verrà usato come convertitore dei dati provenienti dagli autobus. I
-          segnali elaborati verranno inviati tramite collegamento in fibra
-          ottica al server.
+          Siamo gli studenti della 5 TEL A dell'anno scolastico 2023-24, i gruppi di lavoro sono divisi nel seguente modo:
+          <ul>
+            <li>Bus: Alessio Davide, Cossettini Marco, Pipani Chiara Giovanna</li>
+            <li>Base station: Feltrin Teo, Leva Anjela, Nadalin Federico, Visentini Alessandro</li>
+            <li>Server: Fantin Matteo, Galvani Matteo, Monticolo Nicholas, Simiz Nicola, Vrbnicanin Filip</li>
+            <li>Pensiline: Cantarutti Lorenzo, Prykhodko Vladyslav, Smerea Luca Stefan</li>
+            <li>Project manager: Nadalin Federico</li>
+          </ul>
         </p>
       </div>
 
       <div class="content">
-        <h3>Autobus</h3>
+        <h3>Il nostro obiettivo</h3>
         <p>
-          Data una flotta di BUS da monitorare per poter conoscere in tempo
-          reale la posizione e il numero di passeggeri a bordo è necessario
-          prevedere un sistema costituito da questi 4 elementi: elaborazione dei
-          dati ricevuti dai vari sistemi e poi trasmessi alle base stations,
-          unità di comunicazione con la Base Station, contapersone, sistema di
-          rilevazione della posizione.
+          Il nostro compito era quello di permettere ai cittadini di conoscere le informazioni base dei bus tramite un’interfaccia internet.
         </p>
       </div>
 
       <div class="content">
-        <h3>Server</h3>
+        <h3>Perchè lo facciamo?</h3>
         <p>
-          Il server dev'essere in grado di ricevere tramite rete cablata i
-          pacchetti trasmessi dalle base station ad una frequenza minima di una
-          volta al minuto e tradurli tramite l'utilizzo di un protocollo. Il
-          server deve inoltre trattare i dati ricevuti inserenoli in un database
-          nelle rispettive tabelle per poi calcolare gli orari di arrivo dei bus
-          basandosi sulle informazioni ricevute. I calcoli effettuati devono
-          essere spediti secondo un protocollo a ogni pensilina con una
-          frequenza minima di una volta al minuto. Oltre agli orari di arrivo de
-          bus il server deve anche fare da tramite per sapere quanti posti sono
-          disponibili tra base station e pensiline. Nel database del server
-          devono essere contenute tutte le informazioni relative agli orari
-          previsti per ogni tratta, suddivisibile in linea e tempistica per
-          pensilina. Il database, inoltre, deve contenere tabelle apposite per
-          la memorizzazione delle informazioni ricevute che devono resettarsi
-          periodicamente. Il server deve anche contenere un sito web online 24/7
-          accessibile da remoto tramite qualsiasi dispositivo. Sul sito web
-          dev'essere possibile visualizzare, in tempo reale, i bus su una mappa
-          e applicare filtri di visualizzazione per visualizzare solo le linee
-          desiderate. Il sito deve anche permettere, tramite una ricerca, la
-          selezione di una fermata e deve concedere la possibilità di vedere i
-          bus in arrivo e il tempo mancante per il raggiungimento alla fermata
-          scelta, oltre a visualizzare tutte le linee che passano per quella
-          fermata.
+          Il lavoro è un scolastico fornitoci durante il primo periodo
+          e con la consegna fissata per la fine dell'anno scolastico, il
+          referente del progetto è il professor La Notte Francesco Saverio.
         </p>
       </div>
-
+      <div class="cartina">
+        <div class="cartina-text">
+          <h3>Lorem Ipsum</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga natus
+            adipisci molestiae numquam exercitationem fugiat illo sed explicabo.
+            Doloribus qui illum quidem perferendis porro? Repellendus
+            perferendis officiis consectetur necessitatibus temporibus. Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Provident,
+            reprehenderit ullam. Soluta eligendi beatae deserunt similique
+            voluptas quod aspernatur a, minima aliquam quo laborum pariatur
+            saepe. Distinctio sapiente alias vero!
+          </p>
+        </div>
+        <img src="src/images/cartina-fvg.png" alt="" />
+      </div>
+      <div class="contatti">
+        <h3>Lorem Ipsum</h3>
+        <div class="contatti-row">
+          <form action="">
+            <input type="text" placeholder="Nome" required/>
+            <input type="text" placeholder="Cognome" required/>
+            <input type="tel" placeholder="Telefono" required/>
+            <input type="email" placeholder="E-mail" required/>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Messaggio"
+            ></textarea>
+            <div class="termini">
+              <div class="termini-chk">
+                <input type="checkbox" required/>
+                <label for="">
+                  Acconsento al trattamento dei dati <br />
+                  personali per le finalità descritte <br />
+                  nelle policy per la privacy
+                </label>
+              </div>
+              <a href="">INVIA</a>
+            </div>
+          </form>
+          <div class="contatti-row--text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Provident, reprehenderit ullam. Soluta eligendi beatae deserunt
+              similique voluptas quod aspernatur a, minima aliquam quo laborum
+              pariatur saepe. Distinctio sapiente alias vero! Lorem ipsum dolor
+              sit amet, consectetur adipisicing elit. Provident, reprehenderit
+              ullam. Soluta eligendi beatae deserunt similique voluptas quod
+              aspernatur a, minima aliquam quo laborum pariatur saepe.
+              Distinctio sapiente alias vero!
+            </p>
+          </div>
+        </div>
+      </div>
       <footer>
         <div class="col1">
           <svg

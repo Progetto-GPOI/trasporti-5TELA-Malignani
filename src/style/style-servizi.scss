@@ -8,13 +8,14 @@ $color_blue3: #a8dadc;
 $color_blue4: #f1faee;
 $color_blue5: #def4d7;
 $color_red: #e63946;
+$color_gray: #d9d9d9;
 
 /* impostazioni scroll-bar*/
 ::-webkit-scrollbar {
     display: none;
 }
 
-button, a, input{
+button, a, input, textarea{
     vertical-align: baseline;
     font-weight: inherit;
     font-family: inherit;
@@ -32,7 +33,7 @@ body{
 }
 
 header{
-    height: 40px;
+    height: 46px;
     padding: 0 24px;
     display: flex;
     align-items: center;
@@ -45,29 +46,68 @@ header{
         margin-right: 50px;
     }
 
-    ul{
+    .menu{
         display: flex;
         flex-direction: row;
-        li{
-            margin-right: 30px;
-            a{
-                color: $color_red;
-                font-weight: bold;
-                text-decoration: none;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            flex-direction: row;
+            li{
+                margin-right: 30px;
+                a{
+                    color: $color_red;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
             }
         }
-    }
-
-    .hamburger{
-        display: none;
-        width: 30px;
-        height: 24px;
-        flex-direction: column;
-        justify-content: space-between;
-        span{
-            width: 100%;
-            height: 3px;
-            background: $color_red;
+    
+        .utente{
+            display: flex;
+            flex-direction: row;
+            .btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 30px;
+                min-width: 100px;
+                text-decoration: none;
+                border-radius: 30px;
+                label{
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+            }
+    
+            .btn-reg{
+                background: $color_blue2;
+                label{
+                    color: $color_blue3;
+                }
+            }
+            .btn-accedi{
+                background: $color_red;
+                margin-left: 15px;
+                label{
+                    color: $color_blue;
+                }
+            }
+        }
+    
+        .hamburger{
+            display: none;
+            width: 30px;
+            height: 24px;
+            flex-direction: column;
+            justify-content: space-between;
+            span{
+                width: 100%;
+                height: 3px;
+                background: $color_red;
+            }
         }
     }
 }
@@ -81,6 +121,26 @@ header{
 .hero{
     height: 350px;
     background: $color_blue2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 5;
+        object-fit: cover;
+        opacity: .2;
+    }
+    h1{
+        position: relative;
+        z-index: 10;
+        font-weight: bold;
+        font-size: 96px;
+        margin-left: 10%;
+        color: $color_white;
+        text-transform: uppercase;
+    }
 }
 
 .content{
@@ -92,12 +152,120 @@ header{
     }
     p{
         margin-top: 10px;
-        font-size: 18px;
+        font-size: 16px;
+    }
+    ul{
+        li{
+            margin-left: 20px;
+            margin-top: 4px;
+            margin-bottom: 4px;
+            list-style: circle;
+        }
+    }
+}
+
+.cartina{
+    margin-top: 50px;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    &-text{
+        width: 55%;
+        h3{
+            font-weight: bold;
+            font-size: 21px;
+        }
+        p{
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    }
+    img{
+        height: auto;
+        width: 45%;
+        max-width: 500px;
+    }
+}
+
+.contatti{
+    margin-top: 50px;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    h3{
+        font-size: 21px;
+        font-weight: bold;
+    }
+    &-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 47%;
+            input{
+                background: $color_gray;
+                font-size: 14px;
+                height: 30px;
+                margin-top: 2px;
+                padding-left: 7px;
+            }
+            textarea{
+                background: $color_gray;
+                margin-top: 2px;
+                resize: none;
+                padding: 7px;
+                font-size: 14px;
+            }
+            .termini{
+                width: 100%;
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                &-chk{
+                    display: flex;
+                    flex-direction: row;
+                    input[type="checkbox"]{
+                        height: 35px;
+                        width: 35px;
+                        border-radius: 0;
+                        border: none;
+                    }
+                    label{
+                        font-size: 14px;
+                        margin-left: 10px;
+                    }
+                }
+                a{
+                    display: flex;
+                    height: 35px;
+                    width: 100px;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    background: $color_blue;
+                    border-radius: 30px;
+                    text-decoration: none;
+                    color: $color_red;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+            }
+        }
+        &--text{
+            width: 47%;
+            p{
+                font-size: 16px;
+            }
+        }
     }
 }
 
 footer{
-    margin-top: 50px;
+    margin-top: 75px;
     height: 250px;
     background: $color_blue;
     display: flex;
@@ -118,6 +286,7 @@ footer{
     }
     .col3{
         li{
+            margin-top: 5px;
             a{
                 text-align: start;
                 font-size: 15px;
@@ -130,6 +299,84 @@ footer{
         p{
             font-size: 12px;
             color: $color_white;
+        }
+    }
+}
+
+@media(max-width: 1024px){
+    body{
+        background: $color_blue3;
+    }
+
+    header{
+        justify-content: space-between;
+        ul{
+            display: none;
+        }
+        .hamburger{
+            display: flex;
+        }
+    }
+
+    .wrap{
+        width: 100%;
+    }
+
+    .hero{
+        h1{
+            font-size: 64px;
+        }
+    }
+
+    .cartina{
+        flex-direction: column;
+        align-items: center;
+        &-text{
+            width: 100%;
+        }
+        img{
+            width: 100%;
+            margin-top: 50px;
+        }
+    }
+
+    .contatti{
+        &-row{
+            flex-direction: column-reverse;
+            form{
+                width: 100%;
+                margin-top: 50px;
+                .termini{
+                    flex-direction: column;
+                    a{
+                        margin-top: 10px;
+                    }
+                }
+            }
+            &--text{
+                width: 100%;
+            }
+        }
+    }
+
+    footer{
+        flex-direction: column;
+        height: auto;
+        .col1{
+            margin-top: 75px;
+        }
+        .col2{
+            margin-top: 50px;
+            text-align: center;
+        }
+        .col3{
+            margin-top: 50px;
+            text-align: center;
+        }
+        .col4{
+            margin-top: 50px;
+            text-align: center;
+            margin-bottom: 75px;
         }
     }
 }

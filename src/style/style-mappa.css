@@ -22,7 +22,7 @@ body {
 }
 
 header {
-  height: 40px;
+  height: 46px;
   padding: 0 24px;
   display: flex;
   align-items: center;
@@ -35,26 +35,63 @@ header h2 {
   color: #457b9d;
   margin-right: 50px;
 }
-header ul {
+header .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+header .menu ul {
   display: flex;
   flex-direction: row;
 }
-header ul li {
+header .menu ul li {
   margin-right: 30px;
 }
-header ul li a {
+header .menu ul li a {
   color: #e63946;
   font-weight: bold;
   text-decoration: none;
 }
-header .hamburger {
+header .menu .utente {
+  display: flex;
+  flex-direction: row;
+}
+header .menu .utente .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  min-width: 100px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+header .menu .utente .btn label {
+  font-size: 12px;
+  font-weight: bold;
+}
+header .menu .utente .btn-reg {
+  background: #457b9d;
+}
+header .menu .utente .btn-reg label {
+  color: #a8dadc;
+}
+header .menu .utente .btn-accedi {
+  background: #e63946;
+  margin-left: 15px;
+}
+header .menu .utente .btn-accedi label {
+  color: #1d3557;
+}
+header .menu .hamburger {
   display: none;
   width: 30px;
   height: 24px;
   flex-direction: column;
   justify-content: space-between;
 }
-header .hamburger span {
+header .menu .hamburger span {
   width: 100%;
   height: 3px;
   background: #e63946;
@@ -330,6 +367,42 @@ header .hamburger span {
   height: 24px;
   width: 24px;
 }
+.map-col2 .results ul li .biglietto {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.map-col2 .results ul li .biglietto-prezzo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.map-col2 .results ul li .biglietto-prezzo label:first-child {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+}
+.map-col2 .results ul li .biglietto-prezzo label:last-child {
+  font-size: 15px;
+  font-weight: bold;
+}
+.map-col2 .results ul li .biglietto-cta {
+  width: auto;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: #457b9d;
+  padding: 0 14px;
+  border-radius: 30px;
+}
+.map-col2 .results ul li .biglietto-cta label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #def4d7;
+}
 .map-col2 .results ul li .divisore {
   height: 1px;
   width: 100%;
@@ -337,6 +410,10 @@ header .hamburger span {
   background: #1d3557;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 0;
+}
+
+.show {
+  display: flex;
 }
 
 @media (min-width: 1920px) {

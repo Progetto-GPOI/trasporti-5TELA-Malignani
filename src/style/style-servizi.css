@@ -4,7 +4,7 @@
   display: none;
 }
 
-button, a, input {
+button, a, input, textarea {
   vertical-align: baseline;
   font-weight: inherit;
   font-family: inherit;
@@ -22,7 +22,7 @@ body {
 }
 
 header {
-  height: 40px;
+  height: 46px;
   padding: 0 24px;
   display: flex;
   align-items: center;
@@ -35,26 +35,63 @@ header h2 {
   color: #457b9d;
   margin-right: 50px;
 }
-header ul {
+header .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+header .menu ul {
   display: flex;
   flex-direction: row;
 }
-header ul li {
+header .menu ul li {
   margin-right: 30px;
 }
-header ul li a {
+header .menu ul li a {
   color: #e63946;
   font-weight: bold;
   text-decoration: none;
 }
-header .hamburger {
+header .menu .utente {
+  display: flex;
+  flex-direction: row;
+}
+header .menu .utente .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  min-width: 100px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+header .menu .utente .btn label {
+  font-size: 12px;
+  font-weight: bold;
+}
+header .menu .utente .btn-reg {
+  background: #457b9d;
+}
+header .menu .utente .btn-reg label {
+  color: #a8dadc;
+}
+header .menu .utente .btn-accedi {
+  background: #e63946;
+  margin-left: 15px;
+}
+header .menu .utente .btn-accedi label {
+  color: #1d3557;
+}
+header .menu .hamburger {
   display: none;
   width: 30px;
   height: 24px;
   flex-direction: column;
   justify-content: space-between;
 }
-header .hamburger span {
+header .menu .hamburger span {
   width: 100%;
   height: 3px;
   background: #e63946;
@@ -69,6 +106,27 @@ header .hamburger span {
 .hero {
   height: 350px;
   background: #457b9d;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.2;
+}
+.hero h1 {
+  position: relative;
+  z-index: 10;
+  font-weight: bold;
+  font-size: 96px;
+  margin-left: 10%;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .content {
@@ -81,11 +139,117 @@ header .hamburger span {
 }
 .content p {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 16px;
+}
+.content ul li {
+  margin-left: 20px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  list-style: circle;
+}
+
+.cartina {
+  margin-top: 50px;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.cartina-text {
+  width: 55%;
+}
+.cartina-text h3 {
+  font-weight: bold;
+  font-size: 21px;
+}
+.cartina-text p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+.cartina img {
+  height: auto;
+  width: 45%;
+  max-width: 500px;
+}
+
+.contatti {
+  margin-top: 50px;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+}
+.contatti h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+.contatti-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.contatti-row form {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+}
+.contatti-row form input {
+  background: #d9d9d9;
+  font-size: 14px;
+  height: 30px;
+  margin-top: 2px;
+  padding-left: 7px;
+}
+.contatti-row form textarea {
+  background: #d9d9d9;
+  margin-top: 2px;
+  resize: none;
+  padding: 7px;
+  font-size: 14px;
+}
+.contatti-row form .termini {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contatti-row form .termini-chk {
+  display: flex;
+  flex-direction: row;
+}
+.contatti-row form .termini-chk input[type=checkbox] {
+  height: 35px;
+  width: 35px;
+  border-radius: 0;
+  border: none;
+}
+.contatti-row form .termini-chk label {
+  font-size: 14px;
+  margin-left: 10px;
+}
+.contatti-row form .termini a {
+  display: flex;
+  height: 35px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #1d3557;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #e63946;
+  font-size: 14px;
+  font-weight: bold;
+}
+.contatti-row--text {
+  width: 47%;
+}
+.contatti-row--text p {
+  font-size: 16px;
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 75px;
   height: 250px;
   background: #1d3557;
   display: flex;
@@ -103,6 +267,9 @@ footer .col2 label {
   font-size: 12px;
   color: #ffffff;
 }
+footer .col3 li {
+  margin-top: 5px;
+}
 footer .col3 li a {
   text-align: start;
   font-size: 15px;
@@ -112,4 +279,72 @@ footer .col3 li a {
 footer .col4 p {
   font-size: 12px;
   color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  body {
+    background: #a8dadc;
+  }
+  header {
+    justify-content: space-between;
+  }
+  header ul {
+    display: none;
+  }
+  header .hamburger {
+    display: flex;
+  }
+  .wrap {
+    width: 100%;
+  }
+  .hero h1 {
+    font-size: 64px;
+  }
+  .cartina {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cartina-text {
+    width: 100%;
+  }
+  .cartina img {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .contatti-row {
+    flex-direction: column-reverse;
+  }
+  .contatti-row form {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .contatti-row form .termini {
+    flex-direction: column;
+  }
+  .contatti-row form .termini a {
+    margin-top: 10px;
+  }
+  .contatti-row--text {
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    height: auto;
+  }
+  footer .col1 {
+    margin-top: 75px;
+  }
+  footer .col2 {
+    margin-top: 50px;
+    text-align: center;
+  }
+  footer .col3 {
+    margin-top: 50px;
+    text-align: center;
+  }
+  footer .col4 {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 75px;
+  }
 }/*# sourceMappingURL=style-servizi.css.map */
