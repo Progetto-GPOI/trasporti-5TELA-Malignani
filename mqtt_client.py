@@ -37,7 +37,6 @@ class MqttClient:
         style_body = ttk.Style()
         style_body.configure("Treeview", font=("Helvetica", 50))
 
-        # spazio tra le righe
         style_body.configure("Treeview", rowheight=90)
 
         self.tree.tag_configure("oddrow", background="#f0f0f0")  # Grigio chiaro
@@ -95,3 +94,4 @@ if __name__ == "__main__":
 
     mqtt_client = MqttClient(broker_address, topic)
     mqtt_client.run()
+
