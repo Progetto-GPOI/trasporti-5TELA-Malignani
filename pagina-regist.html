@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="src\style\style-servizi.css" />
+    <link rel="stylesheet" href="src\style\style-utente.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css"
@@ -55,95 +55,91 @@
       </header>
       <div class="hero">
         <img src="src/images/img-landing.jpg" alt="" />
-        <h1>Contatti</h1>
+        <h1>Registrati</h1>
       </div>
 
-      <div class="content">
-        <h3>Chi siamo?</h3>
-        <p>
-          Siamo gli studenti della 5 TEL A dell'anno scolastico 2023-24, i gruppi di lavoro sono divisi nel seguente modo:
+      <form action="" class="registrati">
+        <fieldset>
+          <legend>Dati personali</legend>
           <ul>
-            <li>Bus: Alessio Davide, Cossettini Marco, Pipani Chiara Giovanna</li>
-            <li>Base station: Feltrin Teo, Leva Anjela, Nadalin Federico, Visentini Alessandro</li>
-            <li>Server: Fantin Matteo, Galvani Matteo, Monticolo Nicholas, Simiz Nicola, Vrbnicanin Filip</li>
-            <li>Pensiline: Cantarutti Lorenzo, Prykhodko Vladyslav, Smerea Luca Stefan</li>
-            <li>Project manager: Nadalin Federico</li>
+            <li>
+              <label for="Nome">Nome</label>
+              <input type="text">
+            </li>
+            <li>
+              <label for="Cognome">Cognome</label>
+              <input type="text">
+            </li>
+            <li>
+              <label for="Codice fiscale">Codice fiscale</label>
+              <input type="text" size="16">
+            </li>
+            <li>
+              <label for="Data di nascita">Data di nascita</label>
+              <input type="date">
+            </li>
+            <li>
+              <label for="Nazionalità">Nazionalità</label>
+              <input type="text">
+            </li>
+            <li>
+              <label for="Luogo di nascita">Luogo di nascita</label>
+              <input type="text">
+            </li>
+            <li>
+              <label for="Indirizzo">Indirizzo</label>
+              <input type="text">
+            </li>
+            <li>
+              <label for="Città">Città</label>
+              <input type="text">
+            </li>
+            <li>
+              <label for="CAP">CAP</label>
+              <input type="number" size="5">
+            </li>
+            <li>
+              <label for="Numero di telefono">Numero di telefono</label>
+              <input type="number" size="10">
+            </li>
           </ul>
-        </p>
-      </div>
-
-      <div class="content">
-        <h3>Il nostro obiettivo</h3>
-        <p>
-          Il nostro compito era quello di permettere ai cittadini di conoscere le informazioni base dei bus tramite un’interfaccia internet.
-        </p>
-      </div>
-
-      <div class="content">
-        <h3>Perchè lo facciamo?</h3>
-        <p>
-          Il lavoro è un scolastico fornitoci durante il primo periodo
-          e con la consegna fissata per la fine dell'anno scolastico, il
-          referente del progetto è il professor La Notte Francesco Saverio.
-        </p>
-      </div>
-      <div class="cartina">
-        <div class="cartina-text">
-          <h3>Lorem Ipsum</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga natus
-            adipisci molestiae numquam exercitationem fugiat illo sed explicabo.
-            Doloribus qui illum quidem perferendis porro? Repellendus
-            perferendis officiis consectetur necessitatibus temporibus. Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit. Provident,
-            reprehenderit ullam. Soluta eligendi beatae deserunt similique
-            voluptas quod aspernatur a, minima aliquam quo laborum pariatur
-            saepe. Distinctio sapiente alias vero!
-          </p>
-        </div>
-        <img src="src/images/cartina-fvg.png" alt="" />
-      </div>
-      <div class="contatti">
-        <h3>Lorem Ipsum</h3>
-        <div class="contatti-row">
-          <form action="">
-            <input type="text" placeholder="Nome" required/>
-            <input type="text" placeholder="Cognome" required/>
-            <input type="tel" placeholder="Telefono" required/>
-            <input type="email" placeholder="E-mail" required/>
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Messaggio"
-            ></textarea>
-            <div class="termini">
-              <div class="termini-chk">
-                <input type="checkbox" required/>
-                <label for="">
-                  Acconsento al trattamento dei dati <br />
-                  personali per le finalità descritte <br />
-                  nelle policy per la privacy
-                </label>
-              </div>
-              <a href="">INVIA</a>
-            </div>
-          </form>
-          <div class="contatti-row--text">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Provident, reprehenderit ullam. Soluta eligendi beatae deserunt
-              similique voluptas quod aspernatur a, minima aliquam quo laborum
-              pariatur saepe. Distinctio sapiente alias vero! Lorem ipsum dolor
-              sit amet, consectetur adipisicing elit. Provident, reprehenderit
-              ullam. Soluta eligendi beatae deserunt similique voluptas quod
-              aspernatur a, minima aliquam quo laborum pariatur saepe.
-              Distinctio sapiente alias vero!
-            </p>
-          </div>
-        </div>
-      </div>
+        </fieldset>
+        <fieldset>
+          <legend>Account</legend>
+          <ul>
+            <li>
+              <label for="Email">Email</label>
+              <input type="email">
+            </li>
+            <li>
+              <label for="Username">Username</label>
+              <input type="text">
+            </li>
+            <li>
+              <label for="Password">Password</label>
+              <input type="password">
+            </li>
+            <li>
+              <label for="Ripeti password">Ripeti password</label>
+              <input type="password">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Termini</legend>
+          <ul>
+            <li>
+              <input type="checkbox">
+              <label for="Accetto i termini e le condizioni">Accetto i termini e le condizioni</label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label for="Do' il consenso all'invio di informazioni commerciali">Do' il consenso all'invio di informazioni commerciali</label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+      
       <footer>
         <div class="col1">
           <svg

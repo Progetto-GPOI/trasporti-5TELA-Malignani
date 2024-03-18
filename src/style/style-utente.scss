@@ -142,124 +142,15 @@ header{
     }
 }
 
-.content{
-    margin-top: 50px;
-    padding: 0 10%;
-    h3{
+.registrati{
+    margin: 0 25%;
+    margin-top: 75px;
+    border: 2px solid $color_black;
+    border-radius: 20px;
+    padding: 24px;
+    legend{
         font-weight: bold;
-        font-size: 21px;
-    }
-    p{
-        margin-top: 10px;
-        font-size: 16px;
-    }
-    ul{
-        li{
-            margin-left: 20px;
-            margin-top: 4px;
-            margin-bottom: 4px;
-            list-style: circle;
-        }
-    }
-}
-
-.cartina{
-    margin-top: 50px;
-    padding: 0 10%;
-    display: flex;
-    justify-content: space-between;
-    &-text{
-        width: 55%;
-        h3{
-            font-weight: bold;
-            font-size: 21px;
-        }
-        p{
-            margin-top: 10px;
-            font-size: 16px;
-        }
-    }
-    img{
-        height: auto;
-        width: 45%;
-        max-width: 500px;
-    }
-}
-
-.contatti{
-    margin-top: 50px;
-    padding: 0 10%;
-    display: flex;
-    flex-direction: column;
-    h3{
-        font-size: 21px;
-        font-weight: bold;
-    }
-    &-row{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 10px;
-        form{
-            display: flex;
-            flex-direction: column;
-            width: 47%;
-            input{
-                background: $color_gray;
-                font-size: 14px;
-                height: 30px;
-                margin-top: 2px;
-                padding-left: 7px;
-            }
-            textarea{
-                background: $color_gray;
-                margin-top: 2px;
-                resize: none;
-                padding: 7px;
-                font-size: 14px;
-            }
-            .termini{
-                width: 100%;
-                margin-top: 10px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                &-chk{
-                    display: flex;
-                    flex-direction: row;
-                    input[type="checkbox"]{
-                        height: 35px;
-                        width: 35px;
-                        border-radius: 0;
-                        border: none;
-                    }
-                    label{
-                        font-size: 14px;
-                        margin-left: 10px;
-                    }
-                }
-                a{
-                    display: flex;
-                    height: 35px;
-                    width: 100px;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                    background: $color_blue;
-                    border-radius: 30px;
-                    text-decoration: none;
-                    color: $color_red;
-                    font-size: 14px;
-                    font-weight: bold;
-                }
-            }
-        }
-        &--text{
-            width: 47%;
-            p{
-                font-size: 16px;
-            }
-        }
+        margin: 10px 0;
     }
 }
 
