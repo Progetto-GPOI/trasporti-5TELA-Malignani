@@ -30,91 +30,88 @@ button, a, input, textarea{
 body{
     font-family: 'Inter', sans-serif;
     background: $color_blue3;
-    height: 100vh;
+    padding: 5% 5%;
 }
 
 .container-user{
-    
-
-}
-
-@media(max-width: 1024px){
-    body{
-        background: $color_blue3;
+    background: $color_blue;
+    height: 100%;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: row;
+    img{
+        width: 40%;
+        object-fit: cover;
+        border-radius: 20px 0 0 20px;
     }
-
-    header{
-        justify-content: space-between;
-        ul{
-            display: none;
-        }
-        .menu{
-            display: none;
-        }
-        .hamburger{
-            display: flex;
-        }
-    }
-
-    .wrap{
-        width: 100%;
-    }
-
-    .hero{
-        h1{
+    form{
+        width: 60%;
+        padding: 5%;
+        position: relative;
+        h2{
             font-size: 64px;
+            font-weight: bold;
+            color: $color_red;
+            margin-bottom: 8%;
         }
-    }
-
-    .cartina{
-        flex-direction: column;
-        align-items: center;
-        &-text{
-            width: 100%;
-        }
-        img{
-            width: 100%;
-            margin-top: 50px;
-        }
-    }
-
-    .contatti{
-        &-row{
-            flex-direction: column-reverse;
-            form{
-                width: 100%;
-                margin-top: 50px;
-                .termini{
-                    flex-direction: column;
-                    a{
-                        margin-top: 10px;
-                    }
-                }
+        .modulo{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 4%;
+            label{
+                font-size: 18px;
+                font-weight: bold;
+                color: $color_red;
+                text-transform: uppercase;
+                margin-bottom: 1%;
             }
-            &--text{
-                width: 100%;
+            input[type=password], input[type=email]{
+                max-width: 350px;
+                height: 50px;
+                padding: 0 24px;
+                border-radius: 30px;
+                font-size: 24px;
             }
         }
-    }
-
-    footer{
-        flex-direction: column;
-        height: auto;
-        .col1{
-            margin-top: 75px;
+        input[type=button]{
+            background: $color_red;
+            border-radius: 30px;
+            padding: 12px 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 275px;
+            text-decoration: none;
+            color: $color_black;
+            z-index: 10; 
+            font-weight: 600;  
+            font-size: 16px;
+            margin-right: 5px;
+            z-index: 0;
+            margin-bottom: 4%;
         }
-        .col2{
-            margin-top: 50px;
-            text-align: center;
+        label{
+            color: $color_blue3;
+            a{
+                color: $color_blue3;
+            }
         }
-        .col3{
-            margin-top: 50px;
-            text-align: center;
-        }
-        .col4{
-            margin-top: 50px;
-            text-align: center;
-            margin-bottom: 75px;
+        .back-icon{
+            position: absolute;
+            top: 10%;
+            right: 10%;
+            height: 40px;
+            width: 40px;
+            z-index: 20;
+            background: $color_red;
+            display: flex;
+            border-radius: 100%;
+            justify-content: center;
+            align-items: center;
+            svg{
+                margin-left: 9px;
+                fill: $color_blue;
+            }
         }
     }
 }
