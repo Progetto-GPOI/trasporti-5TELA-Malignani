@@ -460,6 +460,24 @@ header{
                 }
             }
         }
+        .menu{
+            .utente{
+                .btn{
+                    height: 45px;
+                    min-width: 125px;
+                }
+                .btn-reg{
+                    label{
+                        font-size: 16px;
+                    }
+                }
+                .btn-accedi{
+                    label{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
     }
     .map{
         &-col{

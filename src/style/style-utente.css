@@ -58,12 +58,12 @@ body {
   text-transform: uppercase;
   margin-bottom: 1%;
 }
-.container-user form .modulo input[type=password], .container-user form .modulo input[type=email] {
+.container-user form .modulo input[type=password], .container-user form .modulo input[type=email], .container-user form .modulo input[type=text] {
   max-width: 350px;
   height: 50px;
   padding: 0 24px;
   border-radius: 30px;
-  font-size: 24px;
+  font-size: 21px;
 }
 .container-user form input[type=button] {
   background: #e63946;
@@ -78,7 +78,6 @@ body {
   z-index: 10;
   font-weight: 600;
   font-size: 16px;
-  margin-right: 5px;
   z-index: 0;
   margin-bottom: 4%;
 }
@@ -104,4 +103,50 @@ body {
 .container-user form .back-icon svg {
   margin-left: 9px;
   fill: #1d3557;
+}
+.container-user form .dots {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+.container-user form .dots span {
+  height: 15px;
+  width: 15px;
+  background: #457b9d;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.container-user form .dots span:first-child {
+  background: #a8dadc;
+}
+
+@media (min-width: 1920px) {
+  .container-user form h2 {
+    font-size: 92px;
+  }
+  .container-user form .modulo label {
+    font-size: 21px;
+  }
+  .container-user form .modulo input[type=password], .container-user form .modulo input[type=email], .container-user form .modulo input[type=text] {
+    max-width: 500px;
+    height: 50px;
+  }
+  .container-user form input[type=button] {
+    padding: 16px 24px;
+    max-width: 375px;
+    font-size: 18px;
+  }
+  .container-user form label {
+    font-size: 18px;
+  }
+  .container-user form .back-icon {
+    height: 60px;
+    width: 60px;
+  }
+  .container-user form .back-icon svg {
+    margin-left: 9px;
+    fill: #1d3557;
+  }
 }/*# sourceMappingURL=style-utente.css.map */

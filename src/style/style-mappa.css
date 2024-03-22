@@ -426,6 +426,16 @@ header .hamburger span {
   header ul li a {
     font-size: 24px;
   }
+  header .menu .utente .btn {
+    height: 45px;
+    min-width: 125px;
+  }
+  header .menu .utente .btn-reg label {
+    font-size: 16px;
+  }
+  header .menu .utente .btn-accedi label {
+    font-size: 16px;
+  }
   .map-col--row2 .head-circ h2 {
     font-size: 54px;
   }

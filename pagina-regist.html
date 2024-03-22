@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pagina-contatti</title>
+    <title>Registrati</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
@@ -28,175 +28,30 @@
   </head>
 
   <body>
-    <div class="wrap">
-      <header>
-        <h2>5TELA</h2>
-        <div class="menu">
-          <ul>
-            <li><a href="landing.html">Home</a></li>
-            <li><a href="pagina-mappa.html">Mappa</a></li>
-            <li><a href="pagina-servizi.html">Servizi</a></li>
-            <li><a href="pagina-contatti.html">Contatti</a></li>
-          </ul>
-          <div class="utente">
-            <a href="" class="btn btn-reg">
-              <label for="">Registrati</label>
-            </a>
-            <a href="pagina-accedi.html" class="btn btn-accedi">
-              <label for="">Accedi</label>
-            </a>
-          </div>
-        </div>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </header>
-      <div class="hero">
-        <img src="src/images/img-landing.jpg" alt="" />
-        <h1>Registrati</h1>
+      <div class="container-user">
+            <img src="src/images/img-landing.jpg" alt="">
+            <form action="">
+                <a href="pagina-mappa.html" class="back-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></a>
+                <div class="dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <h2>REGISTRATI</h2>
+                <div class="modulo">
+                    <label for="">nome:</label>
+                    <input type="text">
+                </div>
+                <div class="modulo">
+                    <label for="">cognome:</label>
+                    <input type="text">
+                </div>
+                <div class="modulo">
+                    <label for="">data di nascita:</label>
+                    <input type="text" placeholder="gg/mm/aaaa">
+                </div>
+                <input type="button" value="SUCCESSIVO">
+            </form>
       </div>
-
-      <form action="" class="registrati">
-        <fieldset>
-          <legend>Dati personali</legend>
-          <ul>
-            <li>
-              <label for="Nome">Nome</label>
-              <input type="text">
-            </li>
-            <li>
-              <label for="Cognome">Cognome</label>
-              <input type="text">
-            </li>
-            <li>
-              <label for="Codice fiscale">Codice fiscale</label>
-              <input type="text" size="16">
-            </li>
-            <li>
-              <label for="Data di nascita">Data di nascita</label>
-              <input type="date">
-            </li>
-            <li>
-              <label for="Nazionalità">Nazionalità</label>
-              <input type="text">
-            </li>
-            <li>
-              <label for="Luogo di nascita">Luogo di nascita</label>
-              <input type="text">
-            </li>
-            <li>
-              <label for="Indirizzo">Indirizzo</label>
-              <input type="text">
-            </li>
-            <li>
-              <label for="Città">Città</label>
-              <input type="text">
-            </li>
-            <li>
-              <label for="CAP">CAP</label>
-              <input type="number" size="5">
-            </li>
-            <li>
-              <label for="Numero di telefono">Numero di telefono</label>
-              <input type="number" size="10">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Account</legend>
-          <ul>
-            <li>
-              <label for="Email">Email</label>
-              <input type="email">
-            </li>
-            <li>
-              <label for="Username">Username</label>
-              <input type="text">
-            </li>
-            <li>
-              <label for="Password">Password</label>
-              <input type="password">
-            </li>
-            <li>
-              <label for="Ripeti password">Ripeti password</label>
-              <input type="password">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Termini</legend>
-          <ul>
-            <li>
-              <input type="checkbox">
-              <label for="Accetto i termini e le condizioni">Accetto i termini e le condizioni</label>
-            </li>
-            <li>
-              <input type="checkbox">
-              <label for="Do' il consenso all'invio di informazioni commerciali">Do' il consenso all'invio di informazioni commerciali</label>
-            </li>
-          </ul>
-        </fieldset>
-      </form>
-      
-      <footer>
-        <div class="col1">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24"
-            viewBox="0 -960 960 960"
-            width="24"
-          >
-            <path
-              d="M240-120q-17 0-28.5-11.5T200-160v-82q-18-20-29-44.5T160-340v-380q0-83 77-121.5T480-880q172 0 246 37t74 123v380q0 29-11 53.5T760-242v82q0 17-11.5 28.5T720-120h-40q-17 0-28.5-11.5T640-160v-40H320v40q0 17-11.5 28.5T280-120h-40Zm242-640h224-448 224Zm158 280H240h480-80Zm-400-80h480v-120H240v120Zm100 240q25 0 42.5-17.5T400-380q0-25-17.5-42.5T340-440q-25 0-42.5 17.5T280-380q0 25 17.5 42.5T340-320Zm280 0q25 0 42.5-17.5T680-380q0-25-17.5-42.5T620-440q-25 0-42.5 17.5T560-380q0 25 17.5 42.5T620-320ZM258-760h448q-15-17-64.5-28.5T482-800q-107 0-156.5 12.5T258-760Zm62 480h320q33 0 56.5-23.5T720-360v-120H240v120q0 33 23.5 56.5T320-280Z"
-            />
-          </svg>
-        </div>
-        <div class="col2">
-          <ul>
-            <li>
-              <label for="">Azienda Srl</label>
-            </li>
-            <li>
-              <label for="">Via Giuseppe Garibaldi 13</label>
-            </li>
-            <li>
-              <label for="">33100 Udine</label>
-            </li>
-            <li>
-              <label for="">Tel: </label>
-            </li>
-            <li>
-              <label for="">email@malignani.ud.it</label>
-            </li>
-          </ul>
-        </div>
-        <div class="col3">
-          <ul>
-            <li>
-              <a href="landing.html">Home</a>
-            </li>
-            <li>
-              <a href="pagina-mappa.html">Mappa</a>
-            </li>
-            <li>
-              <a href="pagina-servizi.html">Servizi</a>
-            </li>
-            <li>
-              <a href="pagina-contatti.html">Contatti</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col4">
-          <p>
-            Copyright 2024 5TELA All rights reserved. <br />
-            Privacy Policy | Cookie Policy <br />
-            Credits: <br />
-            Dev:
-          </p>
-        </div>
-      </footer>
-    </div>
   </body>
 </html>
