@@ -19,7 +19,8 @@ button, a, input, textarea {
 body {
   font-family: "Inter", sans-serif;
   background: #a8dadc;
-  padding: 5% 5%;
+  padding: 10vh 20vh;
+  height: 80vh;
 }
 
 .container-user {
@@ -75,11 +76,10 @@ body {
   max-width: 275px;
   text-decoration: none;
   color: #000000;
-  z-index: 10;
   font-weight: 600;
   font-size: 16px;
-  z-index: 0;
-  margin-bottom: 4%;
+  margin-top: 7%;
+  margin-bottom: 2%;
 }
 .container-user form label {
   color: #a8dadc;
@@ -148,5 +148,39 @@ body {
   .container-user form .back-icon svg {
     margin-left: 9px;
     fill: #1d3557;
+  }
+}
+@media (max-width: 1440px) {
+  .container-user form h2 {
+    font-size: 42px;
+    margin-bottom: 4%;
+  }
+  .container-user form .modulo label {
+    font-size: 14px;
+  }
+  .container-user form .modulo input[type=password], .container-user form .modulo input[type=email], .container-user form .modulo input[type=text] {
+    height: 35px;
+    max-width: 60%;
+    font-size: 14px;
+  }
+  .container-user form input[type=button] {
+    margin-top: 5%;
+    font-size: 14px;
+  }
+  .container-user form label {
+    font-size: 12px;
+  }
+  .container-user form .back-icon {
+    height: 35px;
+    width: 35px;
+  }
+  .container-user form .back-icon svg {
+    height: 21px;
+    width: 21px;
+    margin-left: 8px;
+  }
+  .container-user form .dots span {
+    height: 12px;
+    width: 12px;
   }
 }/*# sourceMappingURL=style-utente.css.map */

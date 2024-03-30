@@ -30,7 +30,8 @@ button, a, input, textarea{
 body{
     font-family: 'Inter', sans-serif;
     background: $color_blue3;
-    padding: 5% 5%;
+    padding: 10vh 20vh;
+    height: 80vh;
 }
 
 .container-user{
@@ -83,11 +84,10 @@ body{
             max-width: 275px;
             text-decoration: none;
             color: $color_black;
-            z-index: 10; 
             font-weight: 600;  
             font-size: 16px;
-            z-index: 0;
-            margin-bottom: 4%;
+            margin-top: 7%;
+            margin-bottom: 2%;
         }
         label{
             color: $color_blue3;
@@ -167,4 +167,51 @@ body{
     }
 }
 
+}
+
+@media(max-width: 1440px){
+    .container-user{
+        form{
+            h2{
+                font-size: 42px;
+                margin-bottom: 4%;
+            }
+            .modulo{
+                label{
+                    font-size: 14px;
+                }
+                input[type=password], input[type=email], input[type=text]{
+                    height: 35px;
+                    max-width: 60%;
+                    font-size: 14px;
+                }
+            }
+
+            input[type=button]{
+                margin-top: 5%;
+                font-size: 14px;
+            }
+
+            label{
+                font-size: 12px;
+            }
+
+            .back-icon{
+                height: 35px;
+                width: 35px;
+                svg{
+                    height: 21px;
+                    width: 21px;
+                    margin-left: 8px;
+                }
+            }
+
+            .dots{
+                span{
+                    height: 12px;
+                    width: 12px;
+                }
+            }
+        }
+    }
 }
