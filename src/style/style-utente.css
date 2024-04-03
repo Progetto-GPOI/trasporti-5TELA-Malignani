@@ -30,7 +30,7 @@ body {
   border-radius: 20px;
   flex-direction: row;
 }
-.container-user img {
+.container-user .img-sx {
   width: 40%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -121,6 +121,39 @@ body {
 .container-user form .dots span:first-child {
   background: #a8dadc;
 }
+.container-user form .medoto-alt {
+  display: flex;
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.container-user form .medoto-alt label {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.container-user form .medoto-alt .links {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.container-user form .medoto-alt .links a {
+  height: 50px;
+  width: 100px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.container-user form .medoto-alt .links a img {
+  height: 40px;
+  width: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 @media (min-width: 1920px) {
   .container-user form h2 {
@@ -182,5 +215,54 @@ body {
   .container-user form .dots span {
     height: 12px;
     width: 12px;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    height: 84vh;
+    padding: 8%;
+    background: #1d3557;
+  }
+  body .container-user .img-sx {
+    display: none;
+  }
+  body .container-user form {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .container-user form .back-icon {
+    display: none;
+  }
+  body .container-user form h2 {
+    font-size: 64px;
+    margin-top: 70px;
+    margin-bottom: 110px;
+  }
+  body .container-user form .modulo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  body .container-user form .modulo label {
+    display: none;
+  }
+  body .container-user form .modulo input[type=password], body .container-user form .modulo input[type=email], body .container-user form .modulo input[type=text] {
+    height: 45px;
+    max-width: 300px;
+    font-size: 14px;
+  }
+  body .container-user form input[type=button] {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    width: 175px;
+    height: 60px;
+    font-size: 21px;
+    color: #ffffff;
+  }
+  body .container-user form .medoto-alt {
+    display: flex;
   }
 }/*# sourceMappingURL=style-utente.css.map */

@@ -40,7 +40,7 @@ body{
     display: flex;
     border-radius: 20px;
     flex-direction: row;
-    img{
+    .img-sx{
         width: 40%;
         object-fit: cover;
         border-radius: 20px 0 0 20px;
@@ -129,6 +129,39 @@ body{
                 }
             }
         }
+        .medoto-alt{
+            display: flex;
+            display: none;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            label{
+                color: $color_white;
+                margin-bottom: 30px;
+            }
+            .links{
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 40px;
+                a{
+                    height: 50px;
+                    width: 100px;
+                    background: $color_white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 20px;
+
+                    img{
+                        height: 40px;
+                        width: 40px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -210,6 +243,58 @@ body{
                 span{
                     height: 12px;
                     width: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1024px){
+    body{
+        height: 84vh;
+        padding: 8%;
+        background: $color_blue;
+        .container-user{
+            .img-sx{
+                display: none;
+            }
+            form{
+                width: 100%;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .back-icon{
+                    display: none;
+                }
+                h2{
+                    font-size: 64px;
+                    margin-top: 70px;
+                    margin-bottom: 110px;
+                }
+                .modulo{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 25px;
+                    label{
+                        display: none;
+                    }
+                    input[type=password], input[type=email], input[type=text]{
+                        height: 45px;
+                        max-width: 300px;
+                        font-size: 14px;
+                    }
+                }
+                input[type=button]{
+                    margin-top: 20px;
+                    margin-bottom: 100px;
+                    width: 175px;
+                    height: 60px;
+                    font-size: 21px;
+                    color: $color_white;
+                }
+                .medoto-alt{
+                    display: flex;
                 }
             }
         }
