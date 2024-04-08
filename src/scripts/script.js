@@ -9,6 +9,18 @@ moltiplicaElemento(document.getElementById('listaResults'), 9, true)
 moltiplicaElemento(document.getElementById('listaCircDx'), 8, true)
 moltiplicaElemento(document.getElementById('listaCircSx'), 8, true)
 
+function toggleMenu() {
+    var x = document.getElementById("menu-mobile");
+    var y = document.getElementById("body")
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+      y.style.overflow = "scroll"
+    } else {
+      x.style.display = "flex";
+      y.style.overflow = "hidden";
+    }
+  }
+
 /*
 
 function selectDot1(){

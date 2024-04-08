@@ -26,10 +26,10 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id="body">
     <header>
       <h2>5TELA</h2>
-      <div class="menu">
+      <div class="menu" id="menu-mobile">
         <ul>
           <li><a href="landing.html">Home</a></li>
           <li><a href="pagina-mappa.html">Mappa</a></li>
@@ -45,11 +45,14 @@
           </a>
         </div>
       </div>
-      <div class="hamburger">
+      <div class="hamburger" onclick="toggleMenu()">
         <span></span>
         <span></span>
         <span></span>
       </div>
+    </header>
+    <header class="header-mobile">
+      <h2>5TELA</h2>
     </header>
     <div class="map">
       <div class="map-col">
