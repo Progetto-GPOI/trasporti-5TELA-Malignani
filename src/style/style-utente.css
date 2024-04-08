@@ -59,7 +59,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 1%;
 }
-.container-user form .modulo input[type=password], .container-user form .modulo input[type=email], .container-user form .modulo input[type=text] {
+.container-user form .modulo-input {
   max-width: 350px;
   height: 50px;
   padding: 0 24px;
@@ -162,7 +162,7 @@ body {
   .container-user form .modulo label {
     font-size: 21px;
   }
-  .container-user form .modulo input[type=password], .container-user form .modulo input[type=email], .container-user form .modulo input[type=text] {
+  .container-user form .modulo-input {
     max-width: 500px;
     height: 50px;
   }
@@ -191,7 +191,7 @@ body {
   .container-user form .modulo label {
     font-size: 14px;
   }
-  .container-user form .modulo input[type=password], .container-user form .modulo input[type=email], .container-user form .modulo input[type=text] {
+  .container-user form .modulo-input {
     height: 35px;
     max-width: 60%;
     font-size: 14px;
