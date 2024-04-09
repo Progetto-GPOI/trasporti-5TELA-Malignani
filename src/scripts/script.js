@@ -10,8 +10,8 @@ moltiplicaElemento(document.getElementById('listaCircDx'), 8, true)
 moltiplicaElemento(document.getElementById('listaCircSx'), 8, true)
 
 function toggleMenu() {
-    var x = document.getElementById("menu-mobile");
-    var y = document.getElementById("body")
+    let x = document.getElementById("menu-mobile");
+    let y = document.getElementById("body")
     if (x.style.display === "flex") {
       x.style.display = "none";
       y.style.overflow = "scroll"
@@ -20,6 +20,16 @@ function toggleMenu() {
       y.style.overflow = "hidden";
     }
   }
+
+
+function togglePrezzo(){
+    let x = document.getElementById("compra");
+    if (x.style.display === "flex") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "flex";
+      }
+}
 
 /*
 
