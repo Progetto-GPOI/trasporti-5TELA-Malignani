@@ -20,13 +20,128 @@ body {
   font-family: "Inter", sans-serif;
   background: #a8dadc;
   padding: 10vh 10vh;
-  height: 80vh;
+  height: calc(80vh - 80px);
 }
 
-.container-user {
+.container-compra {
   background: #ffffff;
   height: 100%;
   display: flex;
   border-radius: 20px;
   flex-direction: row;
+  padding: 40px;
+}
+.container-compra .info-corsa {
+  margin-right: 40px;
+  width: 55%;
+}
+.container-compra .info-corsa h2 {
+  color: #e63946;
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  height: 10%;
+}
+.container-compra .info-corsa .fermate {
+  overflow-y: auto;
+  height: calc(90% - 80px);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.container-compra .info-corsa .fermate ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+.container-compra .info-corsa .fermate ul li {
+  background: #def4d7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  padding: 0 20px;
+}
+.container-compra .info-corsa .fermate ul li:first-child {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.container-compra .info-corsa .fermate ul li:last-child {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.container-compra .divisore {
+  width: 2px;
+  height: 100%;
+  background: #000000;
+}
+.container-compra .pagamento {
+  margin-left: 40px;
+}
+.container-compra .pagamento h3 {
+  font-size: 40px;
+  color: #1d3557;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+.container-compra .pagamento form {
+  margin-bottom: 24px;
+}
+.container-compra .pagamento form .form-row label {
+  text-transform: uppercase;
+}
+.container-compra .pagamento .metodo-pagamento {
+  display: flex;
+  flex-direction: row;
+}
+.container-compra .pagamento .metodo-pagamento li {
+  width: 140px;
+  height: 40px;
+  margin-left: 20px;
+}
+.container-compra .pagamento .metodo-pagamento li:first-child {
+  margin: 0;
+}
+.container-compra .pagamento .metodo-pagamento li a {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+.container-compra .pagamento .metodo-pagamento li a:first-child {
+  background: #FEC514;
+}
+.container-compra .pagamento .metodo-pagamento li a:nth-child(2) {
+  background: #ffffff;
+  border: 1px solid black;
+}
+.container-compra .pagamento .metodo-pagamento li a:last-child {
+  background: #000000;
+}
+.container-compra .pagamento .metodo-pagamento li a img {
+  height: 20px;
+  width: auto;
+}
+.container-compra .pagamento .sconti {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.container-compra .pagamento .sconti label {
+  color: #d9d9d9;
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+.container-compra .pagamento .prezzo {
+  display: flex;
+  flex-direction: column;
+}
+.container-compra .pagamento .prezzo:first-child {
+  font-size: 20px;
+}
+.container-compra .pagamento .prezzo:last-child {
+  font-size: 48px;
 }/*# sourceMappingURL=style-compra.css.map */

@@ -48,9 +48,15 @@ header .hamburger span {
   background: #e63946;
 }
 
+.map {
+  background: #1d3557;
+  display: flex;
+  align-items: center;
+}
 .map-col2 {
-  height: 100vh;
-  padding: 40px 28px;
+  width: calc(100% - 56px);
+  height: calc(98vh - 60px);
+  padding: 2%;
   display: flex;
   flex-direction: column;
 }
@@ -92,7 +98,6 @@ header .hamburger span {
   display: flex;
   align-items: center;
   margin-right: 5px;
-  margin-bottom: 5px;
 }
 .map-col2 form .form-ora--col select {
   border: none;
@@ -130,6 +135,7 @@ header .hamburger span {
   border-radius: 20px;
   background: #a8dadc;
   overflow-y: auto;
+  margin-bottom: 50px;
 }
 .map-col2 .results ul {
   padding: 30px 40px;
@@ -194,6 +200,42 @@ header .hamburger span {
   height: 24px;
   width: 24px;
 }
+.map-col2 .results ul li .biglietto {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.map-col2 .results ul li .biglietto-prezzo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.map-col2 .results ul li .biglietto-prezzo label:first-child {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+}
+.map-col2 .results ul li .biglietto-prezzo label:last-child {
+  font-size: 15px;
+  font-weight: bold;
+}
+.map-col2 .results ul li .biglietto-cta {
+  width: auto;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: #457b9d;
+  padding: 0 14px;
+  border-radius: 30px;
+}
+.map-col2 .results ul li .biglietto-cta label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #def4d7;
+}
 .map-col2 .results ul li .divisore {
   height: 1px;
   width: 100%;
@@ -202,11 +244,12 @@ header .hamburger span {
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 0;
 }
+
 @media (max-width: 1024px) {
-  .map body {
+  body {
     background: #a8dadc;
   }
-  .map header {
+  header {
     height: 60px;
     padding: 0 24px;
     display: flex;
@@ -214,24 +257,24 @@ header .hamburger span {
     align-items: center;
     background: #1d3557;
   }
-  .map header h2 {
+  header h2 {
     font-size: 32px;
     font-weight: bold;
     color: #e63946;
   }
-  .map header .hamburger {
+  header .hamburger {
     width: 30px;
     height: 24px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  .map header .hamburger span {
+  header .hamburger span {
     width: 100%;
     height: 4px;
     background: #e63946;
   }
-  .map .map {
+  .map {
     height: auto;
     flex-direction: column;
   }

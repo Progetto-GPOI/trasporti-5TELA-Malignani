@@ -8,6 +8,7 @@ function moltiplicaElemento(node, count, deep){
 moltiplicaElemento(document.getElementById('listaResults'), 9, true)
 moltiplicaElemento(document.getElementById('listaCircDx'), 8, true)
 moltiplicaElemento(document.getElementById('listaCircSx'), 8, true)
+moltiplicaElemento(document.getElementById('listaFermate'), 6, true)
 
 function toggleMenu() {
     let x = document.getElementById("menu-mobile");
