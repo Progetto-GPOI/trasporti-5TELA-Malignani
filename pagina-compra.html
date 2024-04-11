@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accedi</title>
+    <title>Compra</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
@@ -55,30 +55,30 @@
               <h3>Compra il tuo<br>biglietto</h3>
               <form action="">
                 <div class="form-row">
-                  <label for="">quantità</label>
-                  <input type="number">
+                  <label for="">quantità:</label>
+                  <input type="number" value="1" id="nBiglietti">
                 </div>
                 <div class="form-row">
-                  <label for="">metodo di ricezione</label>
+                  <label for="">metodo di ricezione:</label>
                   <select name="" id="">
-                    <option value="">SMS</option>
-                    <option value="">E-mail</option>
+                    <option value="SMS">SMS</option>
+                    <option value="E-mail">E-mail</option>
                   </select>
                 </div>
               </form>
               <ul class="metodo-pagamento">
                 <li>
-                  <a href="">
+                  <a class="paypal" href="">
                     <img src="src/images/paypal-logo.jpg" alt="">
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a class="googlepay" href="">
                     <img src="src/images/googlepay-logo.png" alt="">
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a class="applepay" href="">
                     <img src="src/images/applepay-logo-white.png" alt="">
                   </a>
                 </li>
@@ -91,6 +91,8 @@
                 <label for="">TOTALE:</label>
                 <label for="">3.05$</label>
               </div>
+              <input class="button" type="button" value="COMPRA">
+              <a href="pagina-mappa.html" class="back-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></a>
           </div>
           </div>
       <script src="src/scripts/script.js" type="text/javascript"></script>

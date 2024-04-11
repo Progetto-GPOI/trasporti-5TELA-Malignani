@@ -77,6 +77,8 @@ body {
 }
 .container-compra .pagamento {
   margin-left: 40px;
+  position: relative;
+  width: 40%;
 }
 .container-compra .pagamento h3 {
   font-size: 40px;
@@ -85,10 +87,27 @@ body {
   margin-bottom: 24px;
 }
 .container-compra .pagamento form {
-  margin-bottom: 24px;
+  margin-bottom: 10%;
+}
+.container-compra .pagamento form .form-row {
+  display: flex;
+  align-items: center;
+}
+.container-compra .pagamento form .form-row:first-child {
+  margin-bottom: 8px;
 }
 .container-compra .pagamento form .form-row label {
   text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+.container-compra .pagamento form .form-row input[type=number] {
+  margin-left: 15px;
+  width: 30px;
+}
+.container-compra .pagamento form .form-row select {
+  margin-left: 15px;
+  border: none;
 }
 .container-compra .pagamento .metodo-pagamento {
   display: flex;
@@ -111,22 +130,25 @@ body {
   justify-content: center;
   background: #ffffff;
 }
-.container-compra .pagamento .metodo-pagamento li a:first-child {
+.container-compra .pagamento .metodo-pagamento li a.paypal {
   background: #FEC514;
 }
-.container-compra .pagamento .metodo-pagamento li a:nth-child(2) {
+.container-compra .pagamento .metodo-pagamento li a.googlepay {
   background: #ffffff;
   border: 1px solid black;
 }
-.container-compra .pagamento .metodo-pagamento li a:last-child {
+.container-compra .pagamento .metodo-pagamento li a.applepay {
   background: #000000;
 }
 .container-compra .pagamento .metodo-pagamento li a img {
   height: 20px;
   width: auto;
 }
+.container-compra .pagamento .metodo-pagamento li a:hover {
+  border: 2px solid #4c8bf5;
+}
 .container-compra .pagamento .sconti {
-  margin-top: 24px;
+  margin-top: 10%;
   display: flex;
   flex-direction: column;
 }
@@ -138,10 +160,47 @@ body {
 .container-compra .pagamento .prezzo {
   display: flex;
   flex-direction: column;
+  margin-top: 15%;
 }
-.container-compra .pagamento .prezzo:first-child {
-  font-size: 20px;
+.container-compra .pagamento .prezzo label {
+  font-weight: bold;
 }
-.container-compra .pagamento .prezzo:last-child {
+.container-compra .pagamento .prezzo label:first-child {
+  font-size: 16px;
+}
+.container-compra .pagamento .prezzo label:last-child {
   font-size: 48px;
+}
+.container-compra .pagamento .button {
+  background: #e63946;
+  border-radius: 30px;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 275px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  font-size: 16px;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+}
+.container-compra .back-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  z-index: 20;
+  background: #e63946;
+  display: flex;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.container-compra .back-icon svg {
+  margin-left: 9px;
+  fill: #1d3557;
 }/*# sourceMappingURL=style-compra.css.map */
