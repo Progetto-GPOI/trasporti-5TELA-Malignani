@@ -32,52 +32,32 @@ function togglePrezzo(){
       }
 }
 
-/*
-
 function selectDot1(){
-    document.getElementById('Dot1').style.color="#a8dadc"
-    document.getElementById('Dot2').style.color="#457b9d"
-    document.getElementById('Dot3').style.color="#457b9d"
-    document.getElementById('nome').style.display="flex"
-    document.getElementById('cognome').style.display="flex"
-    document.getElementById('dataDiNascita').style.display="flex"
+    console.log("Ciao")
+    document.getElementById('dot1').style.background="#a8dadc"
+    document.getElementById('dot2').style.background="#457b9d"
+    document.getElementById('dot3').style.background="#457b9d"
+    document.getElementById('pagina1').style.display="block"
+    document.getElementById('pagina2').style.display="none"
+    document.getElementById('pagina3').style.display="none"
 }
 
 function selectDot2(){
-    document.getElementById('Dot1').style.color="#457b9d"
-    document.getElementById('Dot2').style.color="#a8dadc"
-    document.getElementById('Dot3').style.color="#457b9d"
-    document.getElementById('nome').style.display="none"
-    document.getElementById('cognome').style.display="none"
-    document.getElementById('dataDiNascita').style.display="none"
+    document.getElementById('dot1').style.background="#457b9d"
+    document.getElementById('dot2').style.background="#a8dadc"
+    document.getElementById('dot3').style.background="#457b9d"
+    document.getElementById('pagina1').style.display="none"
+    document.getElementById('pagina2').style.display="block"
+    document.getElementById('pagina3').style.display="none"
 }
 
 function selectDot3(){
-    document.getElementById('Dot1').style.color="#457b9d"
-    document.getElementById('Dot2').style.color="#457b9d"
-    document.getElementById('Dot3').style.color="#a8dadc"
-    document.getElementById('nome').style.display="none"
-    document.getElementById('cognome').style.display="none"
-    document.getElementById('dataDiNascita').style.display="none"
+    document.getElementById('dot1').style.background="#457b9d"
+    document.getElementById('dot2').style.background="#457b9d"
+    document.getElementById('dot3').style.background="#a8dadc"
+    document.getElementById('pagina1').style.display="none"
+    document.getElementById('pagina2').style.display="none"
+    document.getElementById('pagina3').style.display="block"
 }
-
-function selectDotNext(){
-    let i = 1;
-    i + 1;
-    if(i=4){
-        i - 3;
-    }
-    if(i=1){
-        selectDot1()
-    }
-    if(i=2){
-        selectDot2()
-    }
-    if(i=3){
-        selectDot3()
-    }
-}
-
-*/
 
 //da fare script per visualizzare prezzo

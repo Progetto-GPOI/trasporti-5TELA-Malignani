@@ -55,6 +55,17 @@ body{
             color: $color_red;
             margin-bottom: 8%;
         }
+
+        .pagina1{
+            display: block;
+        }
+        .pagina2{
+            display: none;
+        }
+        .pagina3{
+            display: none;
+        }    
+
         .modulo{
             display: flex;
             flex-direction: column;
@@ -118,6 +129,7 @@ body{
             position: absolute;
             bottom: 10%;
             right: 10%;
+            cursor: pointer;
             span{
                 height: 15px;
                 width: 15px;
@@ -251,7 +263,7 @@ body{
 
 @media(max-width: 1024px){
     body{
-        height: 84vh;
+        height: 92vh;
         padding: 8%;
         background: $color_blue;
         .container-user{
@@ -279,13 +291,14 @@ body{
                     label{
                         display: none;
                     }
-                    input[type=password], input[type=email], input[type=text]{
+                    &-input{
                         height: 45px;
                         max-width: 300px;
                         font-size: 14px;
                     }
                 }
                 input[type=button]{
+                    margin: 0 auto;
                     margin-top: 20px;
                     margin-bottom: 100px;
                     width: 175px;
@@ -295,6 +308,12 @@ body{
                 }
                 .medoto-alt{
                     display: flex;
+                }
+            }
+            .dots{
+                span{
+                    height: 20px;
+                    width: 20px;
                 }
             }
         }
