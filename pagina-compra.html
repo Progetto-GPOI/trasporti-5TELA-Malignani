@@ -56,7 +56,7 @@
               <form action="">
                 <div class="form-row">
                   <label for="">quantità:</label>
-                  <input type="number" value="1" id="nBiglietti">
+                  <input type="number" value="1" id="nBiglietti" onchange="prezzoTotale()">
                 </div>
                 <div class="form-row">
                   <label for="">metodo di ricezione:</label>
@@ -84,14 +84,14 @@
                 </li>
               </ul>
               <div class="sconti">
-                <label for="">Acquistando 10 biglietti avrai uno sconto del 5% sul totale</label>
-                <label for="">Acquistando 30 biglietti avrai uno sconto del 10% sul totale</label>
+                <label for="" id="sconto5">Acquistando 10 biglietti avrai uno sconto del 5% sul totale</label>
+                <label for="" id="sconto10">Acquistando 30 biglietti avrai uno sconto del 10% sul totale</label>
               </div>
               <div class="prezzo">
                 <label for="">TOTALE:</label>
-                <label for="">3.05$</label>
+                <label for="" id="prezzoTotale">3.05$</label>
               </div>
-              <input class="button" type="button" value="COMPRA">
+              <input class="button" type="button" value="COMPRA" onclick="prezzoTotale()">
               <a href="pagina-mappa.html" class="back-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></a>
           </div>
           </div>

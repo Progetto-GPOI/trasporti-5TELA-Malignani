@@ -33,7 +33,6 @@ function togglePrezzo(){
 }
 
 function selectDot1(){
-    console.log("Ciao")
     document.getElementById('dot1').style.background="#a8dadc"
     document.getElementById('dot2').style.background="#457b9d"
     document.getElementById('dot3').style.background="#457b9d"
@@ -60,4 +59,27 @@ function selectDot3(){
     document.getElementById('pagina3').style.display="block"
 }
 
-//da fare script per visualizzare prezzo
+function prezzoTotale(){
+  let prezzoBiglietto = 3.05;
+  let nBigletti = document.getElementById('nBiglietti').value;
+  let prezzoTotale = prezzoBiglietto * nBigletti;
+  if(nBigletti>=30){
+    let sconto10=(prezzoTotale/100)*10;
+    prezzoTotale = prezzoTotale - sconto10;
+    document.getElementById('sconto5').style.color='#70e000';
+    document.getElementById('sconto10').style.color='#70e000';
+  }
+  if(nBigletti>=10 && nBigletti<30){
+    let sconto5=(prezzoTotale/100)*5;
+    prezzoTotale = prezzoTotale - sconto5;
+    document.getElementById('sconto5').style.color='#70e000';
+    document.getElementById('sconto10').style.color='##d9d9d9';
+    console.log(sconto5);
+  }
+  if(nBigletti<10){
+    document.getElementById('sconto5').style.color='#d9d9d9';
+    document.getElementById('sconto10').style.color='#d9d9d9';
+  }
+  prezzoTotale=prezzoTotale.toFixed(2);
+  document.getElementById("prezzoTotale").textContent=prezzoTotale+"$";
+}

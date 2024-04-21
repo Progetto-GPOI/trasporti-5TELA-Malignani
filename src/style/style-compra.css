@@ -1,4 +1,4 @@
-/* PAGINA MAPPA */
+/* PAGINA COMPRA */
 /* impostazioni scroll-bar*/
 ::-webkit-scrollbar {
   display: none;
@@ -103,7 +103,7 @@ body {
 }
 .container-compra .pagamento form .form-row input[type=number] {
   margin-left: 15px;
-  width: 30px;
+  width: 40px;
 }
 .container-compra .pagamento form .form-row select {
   margin-left: 15px;
@@ -203,4 +203,29 @@ body {
 .container-compra .back-icon svg {
   margin-left: 9px;
   fill: #1d3557;
+}
+
+@media (max-width: 1440px) {
+  .container-compra .pagamento h3 {
+    font-size: 32px;
+  }
+  .container-compra .pagamento form .form-row label {
+    font-size: 14px;
+  }
+  .container-compra .pagamento .metodo-pagamento li {
+    width: 100px;
+    height: 34px;
+  }
+  .container-compra .pagamento .sconti label {
+    font-size: 12px;
+  }
+  .container-compra .pagamento .prezzo {
+    margin-top: 8%;
+  }
+  .container-compra .pagamento .prezzo label:first-child {
+    font-size: 14px;
+  }
+  .container-compra .pagamento .prezzo label:last-child {
+    font-size: 42px;
+  }
 }/*# sourceMappingURL=style-compra.css.map */

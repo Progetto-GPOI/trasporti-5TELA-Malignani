@@ -1,4 +1,4 @@
-/* PAGINA MAPPA */
+/* PAGINA COMPRA */
 
 $color_white: #ffffff;
 $color_black: #000000;
@@ -110,7 +110,7 @@ body{
                 }
                 input[type="number"]{
                     margin-left: 15px;
-                    width: 30px;
+                    width: 40px;
                 }
                 select{
                     margin-left: 15px;
@@ -222,7 +222,45 @@ body{
 }
 
 @media(max-width: 1440px){
+    .container-compra{
+        .pagamento{
+            h3{
+                font-size: 32px;
+            }
+            form{
+                .form-row{
+                    label{
+                        font-size: 14px;
+                    }
+                }
+            }
 
+            .metodo-pagamento{
+                li{
+                    width: 100px;
+                    height: 34px;
+                }
+            }
+
+            .sconti{
+                label{
+                    font-size: 12px;
+                }
+            }
+            .prezzo{
+                margin-top: 8%;
+                label{
+                    &:first-child{
+                        font-size: 14px;
+                    }
+                    &:last-child{
+                        font-size: 42px;
+                    }
+                }
+            }
+
+        }
+    }
 }
 
 @media(max-width: 1024px){

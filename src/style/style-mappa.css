@@ -316,6 +316,7 @@ header .hamburger span {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .map-col2 .results ul li:last-child {
   margin-bottom: 0;
