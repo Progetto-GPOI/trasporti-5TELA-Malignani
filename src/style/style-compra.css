@@ -23,6 +23,86 @@ body {
   height: calc(80vh - 80px);
 }
 
+header {
+  display: none;
+  height: 46px;
+  padding: 0 24px;
+  align-items: center;
+  background: #1d3557;
+  border-bottom: 4px solid #e63946;
+}
+header h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #457b9d;
+  margin-right: 50px;
+}
+header .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+header .menu ul {
+  display: flex;
+  flex-direction: row;
+}
+header .menu ul li {
+  margin-right: 30px;
+}
+header .menu ul li a {
+  color: #e63946;
+  font-weight: bold;
+  text-decoration: none;
+}
+header .menu .utente {
+  display: flex;
+  flex-direction: row;
+}
+header .menu .utente .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  min-width: 100px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+header .menu .utente .btn label {
+  font-size: 12px;
+  font-weight: bold;
+}
+header .menu .utente .btn-reg {
+  background: #457b9d;
+}
+header .menu .utente .btn-reg label {
+  color: #a8dadc;
+}
+header .menu .utente .btn-accedi {
+  background: #e63946;
+  margin-left: 15px;
+}
+header .menu .utente .btn-accedi label {
+  color: #1d3557;
+}
+header .hamburger {
+  display: none;
+  width: 30px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header .hamburger span {
+  width: 100%;
+  height: 3px;
+  background: #e63946;
+}
+
+.header-mobile {
+  display: none;
+}
+
 .container-compra {
   background: #ffffff;
   height: 100%;
@@ -41,6 +121,9 @@ body {
   font-weight: bold;
   margin-bottom: 50px;
   height: 10%;
+}
+.container-compra .info-corsa .trigger-mobile {
+  display: none;
 }
 .container-compra .info-corsa .fermate {
   overflow-y: auto;
@@ -186,6 +269,7 @@ body {
   position: absolute;
   bottom: 20px;
   right: 0;
+  cursor: pointer;
 }
 .container-compra .back-icon {
   position: absolute;
@@ -227,5 +311,149 @@ body {
   }
   .container-compra .pagamento .prezzo label:last-child {
     font-size: 42px;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    padding: 0;
+    height: calc(95vh - 88px);
+    background: #ffffff;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+  }
+  header ul {
+    display: none;
+  }
+  header .menu {
+    display: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #a8dadc;
+    z-index: 20;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+  }
+  header .menu ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .menu ul li {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  header .menu ul li a {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  header .menu .utente {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    justify-content: center;
+  }
+  header .menu .utente .btn {
+    height: 60px;
+    width: 150px;
+  }
+  header .menu .utente .btn label {
+    font-size: 20px;
+  }
+  header .hamburger {
+    display: flex;
+    z-index: 99;
+  }
+  .header-mobile {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 46px;
+    padding: 0 24px;
+    width: calc(100% - 48px);
+    z-index: 20;
+  }
+  .container-compra {
+    flex-direction: column;
+    border-radius: 0;
+  }
+  .container-compra .info-corsa {
+    width: 100%;
+  }
+  .container-compra .info-corsa h2 {
+    display: none;
+  }
+  .container-compra .info-corsa .trigger-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #d9d9d9;
+    border-radius: 20px;
+    padding: 0 20px;
+    height: 75px;
+    margin-bottom: 50px;
+  }
+  .container-compra .info-corsa .trigger-mobile h3 {
+    font-size: 18px;
+    color: #000000;
+  }
+  .container-compra .info-corsa .trigger-mobile h3 span {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #e63946;
+  }
+  .container-compra .info-corsa .trigger-mobile svg {
+    height: 30px;
+    width: 30px;
+  }
+  .container-compra .info-corsa .fermate {
+    display: none;
+  }
+  .container-compra .divisore {
+    display: none;
+  }
+  .container-compra .pagamento {
+    width: 100%;
+    margin-left: 0;
+  }
+  .container-compra .pagamento h3 {
+    font-size: 36px;
+  }
+  .container-compra .pagamento form {
+    margin-bottom: 18%;
+  }
+  .container-compra .pagamento form .form-row label {
+    font-size: 18px;
+  }
+  .container-compra .pagamento form .form-row input, .container-compra .pagamento form .form-row select {
+    font-size: 18px;
+  }
+  .container-compra .pagamento .metodo-pagamento li {
+    height: 40px;
+    width: 120px;
+  }
+  .container-compra .pagamento .sconti {
+    margin-top: 18%;
+  }
+  .container-compra .pagamento .sconti label {
+    font-size: 16px;
+  }
+  .container-compra .pagamento .sconti label:first-child {
+    margin-bottom: 10px;
+  }
+  .container-compra .pagamento .prezzo {
+    margin-top: 24%;
+    margin-bottom: 24%;
+  }
+  .container-compra .back-icon {
+    display: none;
   }
 }/*# sourceMappingURL=style-compra.css.map */

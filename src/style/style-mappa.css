@@ -352,6 +352,7 @@ header .hamburger span {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .map-col2 .results ul li .content-col2--row .ora-pa {
   display: flex;

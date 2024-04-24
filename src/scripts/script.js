@@ -32,6 +32,23 @@ function togglePrezzo(){
       }
 }
 
+function toggleFermate(){
+  let x = document.getElementById("fermate")
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+    document.getElementById("triggerMobile").style.marginBottom="50px";
+    document.getElementById("triggerMobile").style.borderBottomRightRadius="20px";
+    document.getElementById("triggerMobile").style.borderBottomLeftRadius="20px";
+  } else {
+    x.style.display = "flex";
+    document.getElementById("triggerMobile").style.marginBottom="0";
+    document.getElementById("triggerMobile").style.borderBottomRightRadius="0";
+    document.getElementById("triggerMobile").style.borderBottomLeftRadius="0";
+    document.getElementById("fermataPartenza").style.borderTopLeftRadius="0";
+    document.getElementById("fermataPartenza").style.borderTopRightRadius="0";
+  }
+}
+
 function selectDot1(){
     document.getElementById('dot1').style.background="#a8dadc"
     document.getElementById('dot2').style.background="#457b9d"
