@@ -1,26 +1,5 @@
 /* PAGINA MAPPA */
-/* impostazioni scroll-bar*/
-::-webkit-scrollbar {
-  display: none;
-}
-
-button, a, input {
-  vertical-align: baseline;
-  font-weight: inherit;
-  font-family: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  border: 0 none;
-  outline: 0;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  font-family: "Inter", sans-serif;
-  background: #1d3557;
-}
-
+/* COLORI */
 header {
   height: 46px;
   padding: 0 24px;
@@ -90,6 +69,7 @@ header .hamburger {
   height: 24px;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 99;
 }
 header .hamburger span {
   width: 100%;
@@ -99,6 +79,94 @@ header .hamburger span {
 
 .header-mobile {
   display: none;
+}
+
+@media (max-width: 1024px) {
+  body {
+    background: #a8dadc;
+  }
+  header {
+    justify-content: space-between;
+    z-index: 99;
+  }
+  header ul {
+    display: none;
+  }
+  header .menu {
+    display: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #a8dadc;
+    z-index: 20;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+  }
+  header .menu ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .menu ul li {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  header .menu ul li a {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  header .menu .utente {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    justify-content: center;
+  }
+  header .menu .utente .btn {
+    height: 60px;
+    width: 150px;
+  }
+  header .menu .utente .btn label {
+    font-size: 20px;
+  }
+  header .hamburger {
+    display: flex;
+    z-index: 99;
+  }
+  .header-mobile {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 46px;
+    padding: 0 24px;
+    width: calc(100% - 48px);
+    z-index: 20;
+  }
+}
+/* impostazioni scroll-bar*/
+::-webkit-scrollbar {
+  display: none;
+}
+
+button, a, input {
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #1d3557;
 }
 
 .map {
@@ -515,67 +583,6 @@ header .hamburger span {
 @media (max-width: 1024px) {
   body {
     background: #a8dadc;
-  }
-  header {
-    justify-content: space-between;
-    z-index: 99;
-  }
-  header ul {
-    display: none;
-  }
-  header .menu {
-    display: none;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #a8dadc;
-    z-index: 20;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: 1s;
-  }
-  header .menu ul {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  header .menu ul li {
-    margin: 0;
-    margin-bottom: 20px;
-  }
-  header .menu ul li a {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 10px;
-  }
-  header .menu .utente {
-    position: absolute;
-    bottom: 100px;
-    width: 100%;
-    justify-content: center;
-  }
-  header .menu .utente .btn {
-    height: 60px;
-    width: 150px;
-  }
-  header .menu .utente .btn label {
-    font-size: 20px;
-  }
-  header .hamburger {
-    display: flex;
-    z-index: 99;
-  }
-  .header-mobile {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 46px;
-    padding: 0 24px;
-    width: calc(100% - 48px);
-    z-index: 20;
   }
   .map {
     height: auto;

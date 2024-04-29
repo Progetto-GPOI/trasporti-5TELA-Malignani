@@ -1,10 +1,7 @@
-$color_white: #ffffff;
-$color_black: #000000;
-$color_blue: #1d3557;
-$color_blue2: #457b9d;
-$color_blue3: #a8dadc;
-$color_blue4: #f1faee;
-$color_red: #e63946;
+/* PAGINA LANDING */
+
+@import "_colors";
+@import "_header";
 
 button, a, input{
     vertical-align: baseline;

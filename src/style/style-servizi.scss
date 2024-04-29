@@ -1,14 +1,8 @@
-/* PAGINA MAPPA */
+/* PAGINA SERVIZI E CONTATTI */
 
-$color_white: #ffffff;
-$color_black: #000000;
-$color_blue: #1d3557;
-$color_blue2: #457b9d;
-$color_blue3: #a8dadc;
-$color_blue4: #f1faee;
-$color_blue5: #def4d7;
-$color_red: #e63946;
-$color_gray: #d9d9d9;
+@import "_colors";
+@import "_header";
+@import "_footer";
 
 /* impostazioni scroll-bar*/
 ::-webkit-scrollbar {
@@ -30,90 +24,6 @@ button, a, input, textarea{
 body{
     font-family: 'Inter', sans-serif;
     background: $color_blue3;
-}
-
-header{
-    height: 46px;
-    padding: 0 24px;
-    display: flex;
-    align-items: center;
-    background: $color_blue;
-    border-bottom: 4px solid $color_red;
-    h2{
-        font-size: 28px;
-        font-weight: bold;
-        color: $color_blue2;
-        margin-right: 50px;
-    }
-
-    .menu{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 100%;
-        justify-content: space-between;
-        ul{
-            display: flex;
-            flex-direction: row;
-            li{
-                margin-right: 30px;
-                a{
-                    color: $color_red;
-                    font-weight: bold;
-                    text-decoration: none;
-                }
-            }
-        }
-    
-        .utente{
-            display: flex;
-            flex-direction: row;
-            .btn{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 30px;
-                min-width: 100px;
-                text-decoration: none;
-                border-radius: 30px;
-                label{
-                    font-size: 12px;
-                    font-weight: bold;
-                }
-            }
-    
-            .btn-reg{
-                background: $color_blue2;
-                label{
-                    color: $color_blue3;
-                }
-            }
-            .btn-accedi{
-                background: $color_red;
-                margin-left: 15px;
-                label{
-                    color: $color_blue;
-                }
-            }
-        }
-    }
-    .hamburger{
-        display: none;
-        width: 30px;
-        height: 24px;
-        flex-direction: column;
-        justify-content: space-between;
-        z-index: 99;
-        span{
-            width: 100%;
-            height: 3px;
-            background: $color_red;
-        }
-    }
-}
-
-.header-mobile{
-    display: none;
 }
 
 .wrap{
@@ -268,111 +178,9 @@ header{
     }
 }
 
-footer{
-    margin-top: 75px;
-    height: 250px;
-    background: $color_blue;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 15%;
-    svg{
-        height: 75px;
-        width: 75px;
-        fill: $color_white;
-    }
-    .col2{
-        label{
-            font-size: 12px;
-            color: $color_white;
-        }
-    }
-    .col3{
-        li{
-            margin-top: 5px;
-            a{
-                text-align: start;
-                font-size: 15px;
-                text-decoration: none;
-                color: $color_white;
-            }
-        }
-    }
-    .col4{
-        p{
-            font-size: 12px;
-            color: $color_white;
-        }
-    }
-}
-
 @media(max-width: 1024px){
     body{
         background: $color_blue3;
-    }
-
-    header{
-        justify-content: space-between;
-        z-index: 99;
-        ul{
-            display: none;
-        }
-        .menu{
-            display: none;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: $color_blue3;
-            z-index: 20;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            transition: 1s;
-            ul{
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                li{
-                    margin: 0;
-                    margin-bottom: 20px;
-                    a{
-                        text-align: center;
-                        font-size: 32px;
-                        margin-bottom: 10px;
-                    }
-                }
-            }
-            .utente{
-                position: absolute;
-                bottom: 100px;
-                width: 100%;
-                justify-content: center;
-                .btn{
-                    height: 60px;
-                    width: 150px;
-                    label{
-                        font-size: 20px;
-                    }
-                }
-            }
-        }
-        .hamburger{
-            display: flex;
-            z-index: 99;
-        }
-    }
-
-    .header-mobile{
-        display: flex;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 46px;
-        padding: 0 24px;
-        width: calc(100% - 48px);
-        z-index: 20;
     }
 
     .wrap{
@@ -413,27 +221,6 @@ footer{
             &--text{
                 width: 100%;
             }
-        }
-    }
-
-    footer{
-        flex-direction: column;
-        height: auto;
-        .col1{
-            margin-top: 75px;
-        }
-        .col2{
-            margin-top: 50px;
-            text-align: center;
-        }
-        .col3{
-            margin-top: 50px;
-            text-align: center;
-        }
-        .col4{
-            margin-top: 50px;
-            text-align: center;
-            margin-bottom: 75px;
         }
     }
 }
