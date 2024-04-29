@@ -9,6 +9,7 @@ $color_blue4: #f1faee;
 $color_blue5: #def4d7;
 $color_red: #e63946;
 $color_gray: #d9d9d9;
+$color_gray2: #ebebeb;
 
 /* impostazioni scroll-bar*/
 ::-webkit-scrollbar {
@@ -31,7 +32,7 @@ body{
     font-family: 'Inter', sans-serif;
     background: $color_blue3;
     padding: 10vh 10vh;
-    height: calc(80vh - 80px);
+    height: calc(80vh - 100px);
 }
 
 header{
@@ -124,7 +125,7 @@ header{
     display: flex;
     border-radius: 20px;
     flex-direction: row;
-    padding: 40px;
+    padding: 50px;
     .info-corsa{
         margin-right: 40px;
         width: 55%;
@@ -149,12 +150,15 @@ header{
                 width: 100%;
                 overflow: hidden;
                 li{
-                    background: $color_blue5;
+                    background: $color_gray2;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     height: 75px;
                     padding: 0 20px;
+                    &:nth-child(even){
+                        background: $color_white;
+                    }
                     &:first-child{
                         border-top-left-radius: 20px;
                         border-top-right-radius: 20px;
@@ -311,6 +315,15 @@ header{
 
 @media(max-width: 1440px){
     .container-compra{
+        .info-corsa{
+            .fermate{
+                ul{
+                    li{
+                        height: 60px;
+                    }
+                }
+            }
+        }
         .pagamento{
             h3{
                 font-size: 32px;

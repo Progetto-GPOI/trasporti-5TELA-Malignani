@@ -20,7 +20,7 @@ body {
   font-family: "Inter", sans-serif;
   background: #a8dadc;
   padding: 10vh 10vh;
-  height: calc(80vh - 80px);
+  height: calc(80vh - 100px);
 }
 
 header {
@@ -109,7 +109,7 @@ header .hamburger span {
   display: flex;
   border-radius: 20px;
   flex-direction: row;
-  padding: 40px;
+  padding: 50px;
 }
 .container-compra .info-corsa {
   margin-right: 40px;
@@ -138,12 +138,15 @@ header .hamburger span {
   overflow: hidden;
 }
 .container-compra .info-corsa .fermate ul li {
-  background: #def4d7;
+  background: #ebebeb;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 75px;
   padding: 0 20px;
+}
+.container-compra .info-corsa .fermate ul li:nth-child(even) {
+  background: #ffffff;
 }
 .container-compra .info-corsa .fermate ul li:first-child {
   border-top-left-radius: 20px;
@@ -290,6 +293,9 @@ header .hamburger span {
 }
 
 @media (max-width: 1440px) {
+  .container-compra .info-corsa .fermate ul li {
+    height: 60px;
+  }
   .container-compra .pagamento h3 {
     font-size: 32px;
   }
