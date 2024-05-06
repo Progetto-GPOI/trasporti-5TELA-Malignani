@@ -5,11 +5,14 @@ header{
     align-items: center;
     background: $color_blue;
     border-bottom: 4px solid $color_red;
-    h2{
-        font-size: 28px;
-        font-weight: bold;
-        color: $color_blue2;
-        margin-right: 50px;
+    a{
+        text-decoration: none;
+        h2{
+            font-size: 28px;
+            font-weight: bold;
+            color: $color_blue2;
+            margin-right: 50px;
+        }
     }
 
     .menu{

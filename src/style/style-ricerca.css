@@ -8,7 +8,10 @@ header {
   background: #1d3557;
   border-bottom: 4px solid #e63946;
 }
-header h2 {
+header a {
+  text-decoration: none;
+}
+header a h2 {
   font-size: 28px;
   font-weight: bold;
   color: #457b9d;

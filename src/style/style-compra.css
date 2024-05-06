@@ -8,7 +8,10 @@ header {
   background: #1d3557;
   border-bottom: 4px solid #e63946;
 }
-header h2 {
+header a {
+  text-decoration: none;
+}
+header a h2 {
   font-size: 28px;
   font-weight: bold;
   color: #457b9d;
@@ -145,6 +148,61 @@ header .hamburger span {
     padding: 0 24px;
     width: calc(100% - 48px);
     z-index: 20;
+  }
+}
+footer {
+  margin-top: 75px;
+  height: 250px;
+  background: #1d3557;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15%;
+}
+footer svg {
+  height: 75px;
+  width: 75px;
+  fill: #ffffff;
+}
+footer .col2 label {
+  font-size: 12px;
+  color: #ffffff;
+}
+footer .col3 li {
+  margin-top: 5px;
+}
+footer .col3 li a {
+  text-align: start;
+  font-size: 15px;
+  text-decoration: none;
+  color: #ffffff;
+}
+footer .col4 p {
+  font-size: 12px;
+  color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  footer {
+    flex-direction: column;
+    height: auto;
+  }
+  footer .col1 {
+    margin-top: 75px;
+  }
+  footer .col2 {
+    margin-top: 50px;
+    text-align: center;
+  }
+  footer .col3 {
+    margin-top: 50px;
+    text-align: center;
+  }
+  footer .col4 {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 75px;
   }
 }
 /* impostazioni scroll-bar*/
@@ -364,6 +422,10 @@ header {
   fill: #1d3557;
 }
 
+footer {
+  display: none;
+}
+
 @media (max-width: 1440px) {
   .container-compra .info-corsa .fermate ul li {
     height: 60px;
@@ -394,7 +456,7 @@ header {
 @media (max-width: 1024px) {
   body {
     padding: 0;
-    height: calc(95vh - 88px);
+    height: auto;
     background: #ffffff;
   }
   header {
@@ -484,5 +546,9 @@ header {
   }
   .container-compra .back-icon {
     display: none;
+  }
+  footer {
+    display: flex;
+    margin-top: 0;
   }
 }/*# sourceMappingURL=style-compra.css.map */

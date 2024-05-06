@@ -123,6 +123,7 @@ body{
     .landing{
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         position: relative;
         z-index: 1;
         &-col{
@@ -133,7 +134,6 @@ body{
             z-index: 10;
             &--content{
                 align-items: center;
-                padding-top: 15%;
                 h1{
                     margin-bottom: 75px;
                     font-size: 96px;

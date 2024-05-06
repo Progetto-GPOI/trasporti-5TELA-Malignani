@@ -2,6 +2,7 @@
 
 @import "_colors";
 @import "_header";
+@import "_footer";
 
 /* impostazioni scroll-bar*/
 ::-webkit-scrollbar {
@@ -221,6 +222,10 @@ header{
     }
 }
 
+footer{
+    display: none;
+}
+
 @media(min-width: 1920px){
 
 }
@@ -279,7 +284,8 @@ header{
 @media(max-width: 1024px){
     body{
         padding: 0;
-        height: calc(95vh - 88px);
+        //height: calc(95vh - 88px);
+        height: auto;
         background: $color_white;
     }
 
@@ -376,5 +382,9 @@ header{
         .back-icon{
             display: none;
         }
+    }
+    footer{
+        display: flex;
+        margin-top: 0;
     }
 }

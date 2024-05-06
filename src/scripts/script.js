@@ -42,6 +42,7 @@ function toggleFermate(){
   } else {
     x.style.display = "flex";
     document.getElementById("triggerMobile").style.marginBottom="0";
+    document.getElementById("fermate").style.marginBottom="50px";
     document.getElementById("triggerMobile").style.borderBottomRightRadius="0";
     document.getElementById("triggerMobile").style.borderBottomLeftRadius="0";
     document.getElementById("fermataPartenza").style.borderTopLeftRadius="0";
