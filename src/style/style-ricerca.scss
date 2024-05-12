@@ -23,9 +23,11 @@ button, a, input{
 body{
     font-family: 'Inter', sans-serif;
     background: $color_blue;
+    height: calc(100vh - 50px);
 }
 
 .map{
+    height: calc(100vh - 50px);
     background: $color_blue;
     display: flex;
     align-items: center;
@@ -33,7 +35,8 @@ body{
         //border: 1px solid red;
         width: calc(100% - 56px);
         height: calc(98vh - 60px);
-        padding: 2%;
+        padding: 8%;
+        padding-bottom: 0;
         display: flex;
         flex-direction: column;
         h3{
@@ -232,11 +235,10 @@ body{
 
     @media(max-width: 1024px){
         body{
-            background: $color_blue3;
+            background: $color_blue;
         }
     
         .map{
-            height: auto;
             flex-direction: column;
         }
     }

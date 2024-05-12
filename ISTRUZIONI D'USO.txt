@@ -1,4 +1,0 @@
-Per la visualizzazione delle pagine sono utili solamente le i fle con collegamento al browser ovvero:
-- landing
-- pagina-mappa
-- generate-table

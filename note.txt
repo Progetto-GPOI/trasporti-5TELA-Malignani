@@ -1,0 +1,15 @@
+Rimangono ancora dei piccoli fix da effettuare:
+- nell'elenco della sezione sinistra della pagina mappa indipendentemente 
+  dall'elemento sul quale si clicca comparirà sempre l'opzione di compra 
+  solamente per il primo elemento
+- problema con il menù nellla pagina di ricerca nella versione mobile
+
+Estensioni di VisualStudio utilizzate:
+- gitLens
+- HTML CSS support
+- Live SASS complier
+- Live server
+- Prettier
+
+CI SONO ANCORA DEGLI ELEMENTI MANCANTI
+IL PRODOTTO NON è DEFINIBILE LA VERSIONE FINALE DEL SITO

@@ -170,9 +170,11 @@ button, a, input {
 body {
   font-family: "Inter", sans-serif;
   background: #1d3557;
+  height: calc(100vh - 50px);
 }
 
 .map {
+  height: calc(100vh - 50px);
   background: #1d3557;
   display: flex;
   align-items: center;
@@ -180,7 +182,8 @@ body {
 .map-col2 {
   width: calc(100% - 56px);
   height: calc(98vh - 60px);
-  padding: 2%;
+  padding: 8%;
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
 }
@@ -371,10 +374,9 @@ body {
 
 @media (max-width: 1024px) {
   body {
-    background: #a8dadc;
+    background: #1d3557;
   }
   .map {
-    height: auto;
     flex-direction: column;
   }
 }/*# sourceMappingURL=style-ricerca.css.map */
